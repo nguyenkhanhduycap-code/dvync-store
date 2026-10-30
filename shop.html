@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | D'Vync</title>
+  <meta name="description" content="Shop D'Vync memberships, bands and accessories.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="light" data-page="shop">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main>
+    <div class="wrap page-head">
+      <!-- Text swaps per section (all / memberships / accessories) in js/shop.js -->
+      <p class="eyebrow" id="sec-eyebrow" data-reveal>Shop</p>
+      <h1 id="sec-title" data-reveal="80">Everything you need to <br>know your body.</h1>
+      <p id="sec-text" data-reveal="160">Start with a membership. Every one includes the band. Then make it yours with straps and accessories.</p>
+    </div>
+
+    <div class="wrap">
+      <div class="shop-bar">
+        <div class="chip-rows">
+          <div class="chips" id="cat-chips" role="group" aria-label="Section"></div>
+          <div class="chips chips-sub" id="sub-chips" role="group" aria-label="Accessory type" hidden></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center">
+          <span class="result-count" id="result-count" aria-live="polite"></span>
+          <label class="sr-only" for="sort">Sort products</label>
+          <select class="select" id="sort">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="rating">Top rated</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" id="product-grid"></div>
+    </div>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

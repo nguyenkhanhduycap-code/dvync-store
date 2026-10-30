@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why D'Vync | The Screenless, Personal Health Wearable</title>
+  <meta name="description" content="Why D'Vync: a distraction-free band that tracks the signals that matter, looks the way you want, charges on your wrist and coaches you toward your goals.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/why.css">
+</head>
+<!-- Why D'Vync: sticky hero, then the page slides over it. A sticky sub-nav follows five themes:
+     minimalist, comprehensive, customizable, always on, goal-focused. Behaviour lives in js/why.js. -->
+<body data-page="why">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main class="why">
+
+    <!-- Hero: video stays put while the page slides over it -->
+    <section class="why-hero">
+      <div class="why-hero-layer">
+        <video class="why-hero-video" muted loop playsinline preload="auto" aria-label="Athletes training, recovering and resting while wearing a band">
+          <source src="material/why/WHOOP_WhyWHOOP_Hero_16x9_v1__2_.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="why-hero-shade"></div>
+      <div class="why-hero-dim"></div>
+      <div class="wrap-w why-hero-copy">
+        <h1>Why D'Vync</h1>
+      </div>
+      <button class="why-hero-toggle" aria-label="Pause video" aria-pressed="false">
+        <svg class="i-pause" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+        <svg class="i-play" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+      </button>
+    </section>
+
+    <!-- Everything below rides over the hero -->
+    <div class="why-over">
+
+      <!-- Sticky section nav -->
+      <nav class="why-nav" aria-label="On this page">
+        <div class="why-nav-track">
+          <a href="#minimalist" class="is-active">Minimalist</a>
+          <a href="#comprehensive">Comprehensive</a>
+          <a href="#customizable">Customizable</a>
+          <a href="#always-on">Always on</a>
+          <a href="#goal-focused">Goal-focused</a>
+        </div>
+      </nav>
+
+      <!-- Minimalist (light) -->
+      <section class="why-sec light" id="minimalist">
+        <div class="wrap-w split">
+          <div class="split-copy">
+            <h2 class="why-h3" data-reveal>Nothing to distract you</h2>
+            <p data-reveal="80">D'Vync has no screen, so there are no pings, buzzes or notifications pulling you out of the moment. Just a light band you forget you're wearing.</p>
+            <p data-reveal="140">It picks up your workouts and your sleep on its own, so there's nothing to start, stop or tap.</p>
+          </div>
+          <div class="split-img" data-reveal="100"><img src="material/Life_Benefit_2_Desktop.webp" alt="Close-up of a wrist wearing a rose knit D'Vync band with no screen" loading="lazy"></div>
+        </div>
+      </section>
+
+      <!-- Comprehensive (dark): wide photo, title and text below -->
+      <section class="why-sec dark" id="comprehensive">
+        <div class="wrap-w wide">
+          <div class="wide-img" data-reveal><img src="material/why/Track_Every_Metric_-_Desktop.webp" alt="Man slicing a banana in a sunny kitchen, wearing a black band" loading="lazy"></div>
+          <div class="wide-copy">
+            <h2 class="why-h2" data-reveal>Every signal that matters</h2>
+            <div data-reveal="80">
+              <p>D'Vync tracks the measures research ties most closely to your health, from heart rate variability and resting heart rate to sleep stages, breathing and skin temperature, then turns them into three clear scores every day.</p>
+              <a href="how-it-works.html#pillars" class="btn btn-line">Explore the metrics</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customizable (light): image left, text right -->
+      <section class="why-sec light" id="customizable">
+        <div class="wrap-w split flip">
+          <div class="split-img" data-reveal><img src="material/why/WHOOP-Body-Desktop.webp" alt="Two runners in blue sprinting, blurred with motion" loading="lazy"></div>
+          <div class="split-copy">
+            <h2 class="why-h3" data-reveal="80">Make it look like you</h2>
+            <p data-reveal="140">Dozens of bands in knit, leather, mesh and sport finishes, with clasps in silver, gold and black. Swap them in seconds to match the gym, the office or a night out.</p>
+            <a href="accessories.html" class="btn btn-line dark-line" data-reveal="200">Shop accessories</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Always on (light): wide photo, title and text below -->
+      <section class="why-sec light" id="always-on">
+        <div class="wrap-w wide">
+          <div class="wide-img" data-reveal><img src="material/why/dv-Stay-Charged.webp" alt="Hands sliding a battery pack onto a green knit band" loading="lazy"></div>
+          <div class="wide-copy">
+            <h2 class="why-h2" data-reveal>Charge it without taking it off</h2>
+            <div data-reveal="80">
+              <p>Slide the waterproof battery pack onto your band and keep going. You never lose a night of sleep data, a workout or a morning swim.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statement (dark): the words light up as you scroll -->
+      <section class="why-sec dark why-statement">
+        <div class="wrap-w">
+          <h2 class="why-big" data-fill>
+            <span class="line">Most trackers look back.</span>
+            <span class="line">D'Vync looks ahead.</span>
+          </h2>
+        </div>
+      </section>
+
+      <!-- Goal-focused (dark): two rows -->
+      <section class="why-sec dark" id="goal-focused">
+        <div class="wrap-w split flip">
+          <div class="split-img" data-reveal><img src="material/why/Learn-Exactly-What-Works-Desktop.webp" alt="Woman looking out of a window, with habit results: fruit and vegetables up 6%, dairy down 10%" loading="lazy"></div>
+          <div class="split-copy">
+            <h2 class="why-h3" data-reveal="80">See what really works for you</h2>
+            <p data-reveal="140">Pick the habits you want to test, from caffeine and screen time to meal timing and supplements. D'Vync shows how much each one helps or hurts your sleep and recovery.</p>
+          </div>
+        </div>
+        <div class="wrap-w split gap-top">
+          <div class="split-copy">
+            <h2 class="why-h3" data-reveal>Get coached toward your goals</h2>
+            <p data-reveal="80">Choose a focus for the week, whether that's building fitness, sleeping better or easing stress.</p>
+            <p data-reveal="140">Then get daily guidance on how hard to train, when to go to bed and which habits to keep, all based on your own data.</p>
+          </div>
+          <div class="split-img" data-reveal="100"><img src="material/why/Get-Coached-Desktop.webp" alt="Man in a cap stretching his shoulder, wearing a black band" loading="lazy"></div>
+        </div>
+      </section>
+
+      <!-- Closing CTA (dark) -->
+      <section class="why-sec dark why-end">
+        <div class="wrap-w why-end-inner">
+          <h2 class="why-h2" data-reveal>Ready when you are.</h2>
+          <p data-reveal="80">Start with a free month. Keep the plan that suits you, or send it back.</p>
+          <div class="why-end-actions" data-reveal="140">
+            <a href="shop.html?cat=memberships" class="btn btn-white">Join now</a>
+            <a href="how-it-works.html" class="btn btn-line">How it works</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Floating join button (after the hero), like the membership pages -->
+  <a href="shop.html?cat=memberships" class="why-join btn btn-white">Join now</a>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/why.js"></script>
+</body>
+</html>

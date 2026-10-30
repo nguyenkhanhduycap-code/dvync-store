@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessories | D'Vync</title>
+  <meta name="description" content="Bands for every occasion: knit, reflective, sport, trail, mesh and leather. Every band fits every D'Vync sensor.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<!-- Accessories landing page, laid out like a store front:
+     hero, New arrivals, Shop by band, Best sellers. Rows are built by js/accessories.js from data.js. -->
+<body class="light" data-page="accessories">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="wrap acc-hero">
+      <div class="acc-hero-copy">
+        <p class="eyebrow">Accessories</p>
+        <h1>Make it yours.</h1>
+        <p>Six kinds of band, dozens of colours. Every band fits every D'Vync sensor and swaps in seconds, so you can match the gym, the office and the weekend.</p>
+        <div class="acc-hero-actions">
+          <a class="btn btn-dark" href="#new-arrivals">Shop new arrivals</a>
+          <a class="btn btn-ghost" href="shop.html?cat=bands">All bands</a>
+        </div>
+      </div>
+      <div class="acc-hero-media" data-reveal="120">
+        <img src="material/Tide Lifestyle 1-L3nPOxkj-large.png" alt="Woman by the sea wearing a Lagoon knit band">
+      </div>
+    </section>
+
+    <!-- New arrivals -->
+    <section class="wrap row-block" id="new-arrivals">
+      <div class="row-head">
+        <h2 data-reveal>New arrivals</h2>
+        <div class="row-nav" data-for="row-new">
+          <button class="row-btn prev" aria-label="Previous products" disabled><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="row-btn next" aria-label="Next products"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <div class="row-track" id="row-new"></div>
+    </section>
+
+    <!-- Shop by band -->
+    <section class="wrap row-block" id="shop-by-band">
+      <div class="row-head">
+        <h2 data-reveal>Shop by band</h2>
+        <div class="row-nav" data-for="row-band">
+          <button class="row-btn prev" aria-label="Previous bands" disabled><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="row-btn next" aria-label="Next bands"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <div class="row-track" id="row-band"></div>
+    </section>
+
+    <!-- Best sellers -->
+    <section class="wrap row-block" id="best-sellers">
+      <div class="row-head">
+        <h2 data-reveal>Best sellers</h2>
+        <div class="row-nav" data-for="row-best">
+          <button class="row-btn prev" aria-label="Previous products" disabled><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="row-btn next" aria-label="Next products"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+      <div class="row-track" id="row-best"></div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/accessories.js"></script>
+</body>
+</html>

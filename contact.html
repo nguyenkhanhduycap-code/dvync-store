@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | D'Vync</title>
+  <meta name="description" content="Get in touch with the D'Vync team about orders, returns, your membership or partnerships.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="light" data-page="contact">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main>
+    <div class="wrap page-head">
+      <p class="eyebrow" data-reveal>Contact</p>
+      <h1 data-reveal="80">We're here to help.</h1>
+      <p data-reveal="160">Questions about an order, your membership or a partnership? Send us a message and we'll reply within one business day.</p>
+    </div>
+
+    <div class="wrap contact">
+      <div class="contact-cards">
+        <div class="contact-card" data-reveal><h3>Member support</h3><p>support@dvync.example<br>Mon–Fri, 8 am – 6 pm</p></div>
+        <div class="contact-card" data-reveal="80"><h3>Orders &amp; returns</h3><p>Include your order number (it starts with DV-) and we'll get straight to it. See the <a class="link" href="returns.html">returns policy</a>.</p></div>
+        <div class="contact-card" data-reveal="160"><h3>Press &amp; partnerships</h3><p>press@dvync.example</p></div>
+        <div class="contact-card" data-reveal="240"><h3>Quick answers</h3><p>Most questions are covered in our <a class="link" href="faq.html">FAQ</a>.</p></div>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate data-reveal="120">
+        <div class="form-row">
+          <div class="field"><label for="c-name">Name</label><input id="c-name" autocomplete="name" required><span class="err"></span></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" autocomplete="email" required><span class="err"></span></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="c-topic">Topic</label>
+            <select id="c-topic" required>
+              <option value="">Choose a topic</option>
+              <option>Order status</option><option>Return or refund</option><option>Membership &amp; billing</option>
+              <option>Band or hardware issue</option><option>Press &amp; partnerships</option><option>Something else</option>
+            </select><span class="err"></span></div>
+          <div class="field"><label for="c-order">Order number <span class="muted">(optional)</span></label><input id="c-order" placeholder="DV-XXXXXX"><span class="err"></span></div>
+        </div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" maxlength="2000" required></textarea><span class="hint" id="c-count">0 / 2000</span><span class="err"></span></div>
+        <div id="c-status" aria-live="polite"></div>
+        <button class="btn btn-primary place-btn" type="submit" id="c-send">Send message</button>
+        <p class="demo-note" style="margin:0">Demo form: messages aren't sent anywhere.</p>
+      </form>
+    </div>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      var msg = document.getElementById('c-msg');
+      var count = document.getElementById('c-count');
+      var status = document.getElementById('c-status');
+      var rules = {
+        'c-name': function (v) { return v.length >= 2 || 'Please enter your name.'; },
+        'c-email': function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || 'Enter a valid email address.'; },
+        'c-topic': function (v) { return !!v || 'Choose a topic.'; },
+        'c-order': function (v) { return !v || /^DV-[A-Z0-9]{4,10}$/i.test(v) || 'Order numbers look like DV-ABC123.'; },
+        'c-msg': function (v) { return v.length >= 20 || 'Please write at least 20 characters.'; }
+      };
+      function check(el) {
+        var r = rules[el.id](el.value.trim());
+        var f = el.closest('.field');
+        f.classList.toggle('invalid', r !== true);
+        f.querySelector('.err').textContent = r === true ? '' : r;
+        return r === true;
+      }
+      msg.addEventListener('input', function () { count.textContent = msg.value.length + ' / 2000'; });
+      form.addEventListener('blur', function (e) { if (rules[e.target.id] && e.target.value) check(e.target); }, true);
+      form.addEventListener('input', function (e) { if (rules[e.target.id] && e.target.closest('.field.invalid')) check(e.target); });
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var bad = null;
+        Object.keys(rules).forEach(function (id) { var el = document.getElementById(id); if (!check(el) && !bad) bad = el; });
+        if (bad) { bad.focus(); status.className = 'form-msg-box err'; status.textContent = 'Please fix the highlighted fields.'; return; }
+        var btn = document.getElementById('c-send');
+        btn.classList.add('loading');
+        status.textContent = ''; status.className = '';
+        setTimeout(function () {
+          btn.classList.remove('loading');
+          var name = document.getElementById('c-name').value.trim().split(' ')[0];
+          status.className = 'form-msg-box ok';
+          status.textContent = 'Thanks, ' + name + '! Your message is on its way. We\'ll reply to ' + document.getElementById('c-email').value.trim() + ' within one business day.';
+          form.reset();
+          count.textContent = '0 / 2000';
+        }, 900);
+      });
+    })();
+  </script>
+</body>
+</html>

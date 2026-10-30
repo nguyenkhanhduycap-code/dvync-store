@@ -1,0 +1,12 @@
+# Local tool settings and test output
+.claude/
+.playwright-mcp/
+
+# Saved reference web page (not used by the site)
+material/blog/The Most Advanced Bloodwork for Your Health.html
+material/blog/The Most Advanced Bloodwork for Your Health_files/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store

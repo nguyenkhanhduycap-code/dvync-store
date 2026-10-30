@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The D'Vync Journal | Sleep, Recovery, Training &amp; Health</title>
+  <meta name="description" content="Practical, research-backed guides on sleep, recovery, training, stress and long-term health from the D'Vync team.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<!-- The D'Vync Journal (blog). The hero stays put and the page slides up over it (like Why D'Vync).
+     Layout: hero, topic marquee, latest posts, guides by goal,
+     why read, editor's pick, library with filters, newsletter, community, FAQ.
+     Article data comes from DV_POSTS / DV_AUTHORS in js/data.js; behaviour in js/blog.js. -->
+<body class="light" data-page="blog">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main class="jr">
+
+    <!-- 1. Hero -->
+    <section class="jr-hero">
+      <img class="jr-hero-bg" src="material/blog/thumbnail.jpg" alt="">
+      <!-- Live animated backdrop (three flowing bands, drawn by js/blog.js); the image above is the fallback -->
+      <canvas class="jr-hero-canvas" aria-hidden="true"></canvas>
+      <div class="jr-hero-shade"></div>
+      <div class="jr-hero-dim"></div>
+      <div class="jr-wrap jr-hero-copy">
+        <h1 data-reveal>Understand your body, one read at a time</h1>
+      </div>
+    </section>
+
+    <!-- Everything below slides up over the sticky hero -->
+    <div class="jr-over">
+
+    <!-- 2. Topics: rows of tags drift sideways around an image; a tag filters the library -->
+    <section class="jr-sec jr-topics">
+      <div class="jr-wrap">
+        <h2 class="jr-h2" data-reveal>Explore every part of your health</h2>
+        <p class="jr-lead" data-reveal="80">From deep sleep to resting heart rate, pick a topic and we'll show you everything we've written about it.</p>
+      </div>
+      <div class="jr-marquee" aria-label="Topics">
+        <div class="jr-rows" id="jr-rows"></div>
+        <img class="jr-marquee-img" src="material/blog/Content.webp" alt="" loading="lazy">
+      </div>
+    </section>
+
+    <!-- 3. Latest -->
+    <section class="jr-sec jr-wrap">
+      <div class="jr-head-row">
+        <h2 class="jr-h2" data-reveal>Latest from the Journal</h2>
+        <a href="#library" class="btn btn-dark jr-btn" data-reveal="80">All articles</a>
+      </div>
+      <ul class="jr-latest" id="jr-latest"></ul>
+    </section>
+
+    <!-- 4. Guides by goal: sticky title on the left, goal cards on the right -->
+    <section class="jr-sec jr-wrap jr-goals">
+      <div class="jr-goals-head">
+        <h2 class="jr-h2" data-reveal>Guides chosen for your goals</h2>
+        <p class="jr-lead" data-reveal="80">Start with what you want to change. Each collection gathers the articles that will help most.</p>
+      </div>
+      <ul class="jr-goal-grid">
+        <li><a class="goal" href="#library" data-filter="Recovery" style="--hue:0deg"><img src="material/blog/biomarker_card_3.webp" alt="" loading="lazy"><h3><span>Recover faster</span></h3></a></li>
+        <li><a class="goal" href="#library" data-filter="Sleep" style="--hue:0deg"><img src="material/blog/biomarker_card_2.webp" alt="" loading="lazy"><h3><span>Sleep deeper, wake sharper</span></h3></a></li>
+        <li><a class="goal" href="#library" data-filter="Training"><img src="material/blog/biomarker_card_1.webp" alt="" loading="lazy"><h3><span>Train with data, not guesswork</span></h3></a></li>
+        <li><a class="goal tint" href="#library" data-filter="Stress" style="--hue:200deg"><img src="material/blog/biomarker_card_1.webp" alt="" loading="lazy"><h3><span>Handle stress better</span></h3></a></li>
+        <li><a class="goal tint" href="#library" data-filter="Heart" style="--hue:150deg"><img src="material/blog/biomarker_card_3.webp" alt="" loading="lazy"><h3><span>Look after your heart</span></h3></a></li>
+        <li><a class="goal tint" href="#library" data-filter="Longevity" style="--hue:60deg"><img src="material/blog/Content.webp" alt="" loading="lazy"><h3><span>Add healthy years</span></h3></a></li>
+      </ul>
+    </section>
+
+    <!-- 5. Why read -->
+    <section class="jr-sec jr-wrap">
+      <ul class="jr-why">
+        <li data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h12"/><path d="M8 7h6M8 11h6"/></svg>
+          <h3>Grounded in research</h3><p>Every guide is based on published studies and checked by our team.</p>
+        </li>
+        <li data-reveal="80">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+          <h3>Written by our coaches</h3><p>Physiologists, coaches and nutritionists who work with real data every day.</p>
+        </li>
+        <li data-reveal="160">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>Read in five minutes</h3><p>Short, clear and practical, with three key takeaways in every article.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 6. Editor's pick -->
+    <section class="jr-sec jr-wrap jr-split" id="jr-pick"></section>
+
+    <!-- 7. Library -->
+    <section class="jr-sec jr-wrap" id="library">
+      <h2 class="jr-h2" data-reveal>All articles</h2>
+      <ul class="jr-checks" data-reveal="80">
+        <li><i aria-hidden="true"></i>Free to read</li>
+        <li><i aria-hidden="true"></i>No sign-up needed</li>
+        <li><i aria-hidden="true"></i>New every week</li>
+      </ul>
+      <div class="jr-filters" id="jr-filters" role="toolbar" aria-label="Filter by topic"></div>
+      <ul class="jr-lib" id="jr-lib"></ul>
+      <p class="jr-empty" id="jr-empty" hidden>No articles in this topic yet. <button type="button" class="link" data-filter="All">Show all articles</button></p>
+    </section>
+
+    <!-- 8. Newsletter -->
+    <section class="jr-sec jr-wrap jr-split" id="newsletter">
+      <div class="jr-split-copy">
+        <h2 class="jr-h2" data-reveal>The Sunday Reset</h2>
+        <p class="jr-lead" data-reveal="80">One email a week with our newest guide, a habit to try and the stat that surprised us most. Unsubscribe whenever you like.</p>
+        <form class="jr-form" id="jr-form" novalidate data-reveal="140">
+          <label class="sr-only" for="jr-email">Email address</label>
+          <input id="jr-email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark jr-btn" type="submit">Subscribe</button>
+        </form>
+        <p class="jr-form-msg" id="jr-form-msg" role="status"></p>
+      </div>
+      <div class="jr-split-img" data-reveal="100"><img src="material/blog/biomarker_card_2.webp" alt="" loading="lazy"></div>
+    </section>
+
+    <!-- 9. Most read: a quiet strip -->
+    <section class="jr-sec jr-wrap">
+      <div class="jr-popular" id="jr-popular"></div>
+    </section>
+
+    <!-- 11. Community: photos and tips in a staggered grid -->
+    <section class="jr-sec jr-wrap">
+      <h2 class="jr-h2" data-reveal>Out there with D'Vync</h2>
+      <ul class="jr-wall">
+        <li class="ph tall" data-reveal><img src="material/blog/al-testimonial-francisco.webp" alt="Skier taking a selfie on a snowy slope" loading="lazy"><span>Ski day</span></li>
+        <li class="tip" data-reveal="80"><p>Cold-weather sports raise your strain more than you'd think. Check your recovery the morning after.</p><small>Tip from the coaches</small></li>
+        <li class="tip" data-reveal="120"><p>Long rides count as training. Refuel with protein and carbs within a couple of hours.</p><small>Tip from the coaches</small></li>
+        <li class="ph short" data-reveal="160"><img src="material/blog/al-testimonial-luigi.webp" alt="Member out on an active day" loading="lazy"><span>Weekend reset</span></li>
+        <li class="ph short" data-reveal><img src="material/blog/al-testimonial-lee.webp" alt="Member enjoying time outdoors" loading="lazy"><span>Outdoors</span></li>
+        <li class="tip" data-reveal="80"><p>A short walk after dinner lowers your heart rate at bedtime. Small habit, real difference.</p><small>Tip from the coaches</small></li>
+        <li class="tip" data-reveal="120"><p>Slept badly? Keep your wake time anyway. One steady morning beats a long lie-in.</p><small>Tip from the coaches</small></li>
+        <li class="ph tall" data-reveal="160"><img src="material/blog/al-testimonial-stacey.webp" alt="Cyclist in a helmet smiling on a gravel road" loading="lazy"><span>Morning ride</span></li>
+      </ul>
+    </section>
+
+    <!-- 12. FAQ -->
+    <section class="jr-sec jr-wrap jr-faq">
+      <h2 class="jr-h2" data-reveal>FAQ</h2>
+      <div class="jr-faq-list" data-reveal="80">
+        <details class="acc"><summary>Do I need a D'Vync to use the Journal?</summary><div class="acc-body"><div><p>No. Every article is free to read. If you wear a D'Vync, you'll also see your own numbers for the topics we cover.</p></div></div></details>
+        <details class="acc"><summary>How often do you publish?</summary><div class="acc-body"><div><p>We publish a new guide every week and update older ones when new research comes out.</p></div></div></details>
+        <details class="acc"><summary>Who writes the articles?</summary><div class="acc-body"><div><p>Our in-house team of coaches, physiologists and nutritionists. Each piece is reviewed before it goes live.</p></div></div></details>
+        <details class="acc"><summary>Can I suggest a topic?</summary><div class="acc-body"><div><p>Please do. Send your idea through our <a class="link" href="contact.html">contact page</a> and we'll add it to the list.</p></div></div></details>
+        <details class="acc"><summary>Is this medical advice?</summary><div class="acc-body"><div><p>No. The Journal is for general education. Talk to a healthcare professional about your own health.</p></div></div></details>
+      </div>
+    </section>
+
+    <!-- 13. Disclaimer strip -->
+    <section class="jr-note">
+      <p class="jr-wrap">The D'Vync Journal is for general information only and is not medical advice. D'Vync is not a medical device and is not intended to diagnose, treat or prevent any condition.</p>
+    </section>
+    </div>
+  </main>
+
+  <!-- Floating subscribe button -->
+  <a href="#newsletter" class="jr-float btn btn-dark">Get the newsletter</a>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

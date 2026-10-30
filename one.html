@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D'Vync One Membership | Recovery, Sleep &amp; Strain Tracking</title>
+  <meta name="description" content="D&#x27;Vync One: round-the-clock recovery, sleep and strain tracking with daily coaching, for $199 a year. Band included.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/one.css">
+</head>
+<!-- Membership landing page. Generated from one shared template for one.html, peak.html and life.html;
+     data-plan tells js/one.js which plan this page sells. -->
+<body data-page="one" data-plan="one">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main class="m-page">
+
+    <!-- 1. Hero: full-bleed photo (landscape on desktop, portrait on phones), oversized plan name -->
+    <section class="m-hero">
+      <!-- sticky hero: the photo layer drifts up slowly (parallax) while the page content slides over it -->
+      <div class="m-hero-layer"><picture>
+        <source media="(max-width: 700px)" srcset="material/Hero-One-portrait-4500x6000-v2.jpg">
+        <img class="m-hero-img" src="material/Hero-One-landscape-4320x2145-v2.webp" alt="The D&#x27;Vync One band in Onyx knit on a wrist">
+      </picture></div>
+      <div class="m-hero-shade"></div>
+      <div class="m-hero-dim"></div>
+      <div class="wrap-m m-hero-copy">
+        <h1 data-reveal>D'Vync One</h1>
+        <p data-reveal="120">Everything you need to train with purpose, sleep on schedule and recover on time. D'Vync One reads your body around the clock and turns it into one clear plan each morning.</p>
+        <span class="hsa" data-reveal="200"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>HSA/FSA eligible</span>
+      </div>
+    </section>
+
+    <!-- Everything after the hero rides over it like a curtain -->
+    <div class="m-over">
+
+    <!-- 2. Statement -->
+    <section class="wrap-m m-statement">
+      <h2 data-reveal>The essentials, done right.</h2>
+      <p data-reveal="100">Recovery, sleep and strain are the three numbers that decide how good today can be. One measures all three with lab-validated accuracy, then tells you exactly how hard to go and when to rest.</p>
+    </section>
+
+    <!-- 3. Buy box -->
+    <section class="wrap-m">
+      <div class="m-buy" data-reveal>
+        <div class="m-buy-media"><img src="material/dv-One_tier__4_.webp" alt="The D&#x27;Vync app showing sleep, day strain and recovery scores"></div>
+        <div class="m-buy-panel">
+          <div class="m-buy-top"><svg width="14" height="14" viewBox="0 0 100 100" aria-hidden="true"><path d="M73.3 12.7A44 44 0 1 1 26.7 12.7" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="50" r="12" fill="#2FD6A6"/></svg>Includes the latest D'Vync sensor</div>
+          <div class="m-buy-body">
+            <h3 class="spaced">One</h3>
+            <p class="m-buy-sub">Our essential membership, at our best price: <strong>$199/yr</strong>.</p>
+            <ul class="m-checks">
+              <li>D'Vync sensor with 5-day battery</li>
+              <li>Recovery, sleep &amp; strain scores</li>
+              <li>Personalised daily coaching</li>
+              <li>Heart rate zones &amp; VO₂ max</li>
+              <li>Cycle-aware insights</li>
+            </ul>
+            <button class="btn btn-white btn-block" data-join="one">Join with D'Vync One</button>
+            <span class="hsa hsa-plain"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>HSA/FSA eligible</span>
+          </div>
+        </div>
+      </div>
+      <p class="m-note" data-reveal>See product notes at the bottom of the page.</p>
+    </section>
+
+    <!-- 4. Comparison (built by js/one.js from DV_PLAN_COMPARE) -->
+    <section class="wrap-m m-compare-wrap">
+      <h2 class="m-h2" data-reveal>Compare memberships</h2>
+      <div class="m-compare" id="m-compare"></div>
+    </section>
+
+    <!-- 5. Features: list on the left, matching photo on the right (auto-advances) -->
+    <section class="wrap-m m-features">
+      <h2 class="m-h2 big" data-reveal>Features of the<br>One membership</h2>
+      <div class="m-feat-grid">
+        <div class="m-feat-list" role="tablist" aria-label="D'Vync One features">
+          <button class="m-feat is-active" role="tab" aria-selected="true" data-i="0">
+            <span class="m-feat-title">Train smarter</span>
+            <span class="m-feat-text"><span>D'Vync measures the load every session puts on your heart and muscles, then sets a daily strain target based on how recovered you are, so you know exactly how hard to go.</span></span>
+          </button>
+          <button class="m-feat" role="tab" aria-selected="false" data-i="1">
+            <span class="m-feat-title">Sleep deeper</span>
+            <span class="m-feat-text"><span>Get a recommended bedtime built around today's training, and a gentle vibration alarm that wakes you at the right moment instead of mid-cycle.</span></span>
+          </button>
+          <button class="m-feat" role="tab" aria-selected="false" data-i="2">
+            <span class="m-feat-title">Recover faster</span>
+            <span class="m-feat-text"><span>Every morning your recovery score turns heart rate variability, resting heart rate and sleep into one clear number, with coaching on what to change today.</span></span>
+          </button>
+        </div>
+        <div class="m-feat-media" data-reveal="100">
+          <img class="is-active" src="material/Image-Video__4_.webp" alt="Climber wearing a D&#x27;Vync band during a training session">
+          <img src="material/One_Benefit_2-1-min.webp" alt="Recommended bedtime and wake alarm shown over an evening scene">
+          <img src="material/One_Benefit_6.webp" alt="Athlete resting after a workout">
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Closing CTA banner -->
+    <section class="wrap-m">
+      <div class="m-cta" data-reveal>
+        <img src="material/image__8_.webp" alt="" loading="lazy">
+        <div class="m-cta-copy">
+          <h2>Try it free for 30 days.</h2>
+          <p>Wear it, sleep in it, train with it. Keep going with the plan that suits you, or send it back.</p>
+          <button class="btn btn-white" data-join="free">Start your free month</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Notes -->
+    <section class="wrap-m m-notes">
+      <p>Battery life depends on settings and use. Five days reflects typical use with continuous heart rate tracking.</p>
+      <p>Heart rate zones, VO₂ max and cycle insights are for general fitness and wellness only. D'Vync is not a medical device and is not intended to diagnose, treat or prevent any condition. Talk to a healthcare professional about medical concerns.</p>
+      <p>HSA/FSA eligibility depends on your plan. See our <a class="link" href="faq.html#membership">membership FAQ</a> and <a class="link" href="returns.html">returns policy</a> for details. This is a demo store; no real orders are placed.</p>
+    </section>
+    </div>
+  </main>
+
+  <!-- Floating join button (appears after the hero) -->
+  <button class="sticky-join btn btn-white" data-join="one" aria-label="Join with D'Vync One">Join now</button>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/one.js"></script>
+</body>
+</html>

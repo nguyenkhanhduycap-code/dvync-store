@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health data privacy | D'Vync</title>
+  <meta name="description" content="How D'Vync collects, uses, protects and shares your health data, and the controls you have over it.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="light" data-page="privacy">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main>
+    <div class="wrap page-head">
+      <p class="eyebrow" data-reveal>Policies</p>
+      <h1 data-reveal="80">Health data privacy</h1>
+      <p data-reveal="160">Your body's data is some of the most personal information there is. Here's exactly what D'Vync collects, why, and how you stay in control of it.</p>
+    </div>
+
+    <div class="wrap">
+      <ul class="privacy-promises">
+        <li data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M12 4v16" transform="rotate(45 12 12)"/><circle cx="12" cy="12" r="9"/></svg>
+          <strong>We never sell your data</strong><span>Not to advertisers, insurers, employers or anyone else.</span>
+        </li>
+        <li data-reveal="80">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          <strong>Encrypted end to end</strong><span>In transit between band, phone and cloud, and at rest.</span>
+        </li>
+        <li data-reveal="160">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+          <strong>Yours to export or delete</strong><span>Download everything or erase your account from the app at any time.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrap policy">
+      <nav class="toc" aria-label="On this page">
+        <a href="#collect">What we collect</a><a href="#use">How we use it</a><a href="#share">Who we share it with</a>
+        <a href="#protect">How we protect it</a><a href="#control">Your controls</a><a href="#retention">How long we keep it</a>
+        <a href="#research">Research</a><a href="#children">Children</a><a href="#changes">Changes &amp; contact</a>
+      </nav>
+      <div class="prose" data-reveal>
+        <p class="small muted">Last updated: October 1, 2026</p>
+
+        <h2 id="collect">What we collect</h2>
+        <p>We only collect what we need to give you accurate insights and run your membership.</p>
+        <table class="table">
+          <thead><tr><th>Type of data</th><th>Examples</th><th>Why we need it</th></tr></thead>
+          <tbody>
+            <tr><td>Sensor data</td><td>Heart rate, HRV, breathing rate, skin temperature, blood oxygen, movement</td><td>To calculate sleep, recovery, strain and stress</td></tr>
+            <tr><td>Health features</td><td>ECG readings, blood pressure estimates, cycle and pregnancy logs</td><td>Only if you turn these features on</td></tr>
+            <tr><td>Profile</td><td>Age, height, weight, sex, goals</td><td>To personalise your scores and targets</td></tr>
+            <tr><td>Journal entries</td><td>Caffeine, alcohol, sleep habits you choose to log</td><td>To show which habits affect your recovery</td></tr>
+            <tr><td>Account &amp; orders</td><td>Name, email, address, order history</td><td>To ship your band and manage your membership</td></tr>
+            <tr><td>App diagnostics</td><td>Crash reports, app version, device model</td><td>To fix bugs and keep the app stable</td></tr>
+          </tbody>
+        </table>
+        <p>We don't collect your precise location unless you record a GPS workout, and we never access your contacts, photos or messages.</p>
+
+        <h2 id="use">How we use it</h2>
+        <ul>
+          <li>To calculate your daily scores, trends and coaching.</li>
+          <li>To power optional features such as Healthspan, heart screening and blood pressure insights.</li>
+          <li>To provide support when you ask us for help.</li>
+          <li>To improve our algorithms using de-identified data, only if you allow it (see <a class="link" href="#research">Research</a>).</li>
+        </ul>
+        <p>We do <strong>not</strong> use your health data for advertising, and we never build marketing profiles from it.</p>
+
+        <h2 id="share">Who we share it with</h2>
+        <p>We never sell your personal or health data. We only share it in these limited cases:</p>
+        <ul>
+          <li><strong>Apps you connect.</strong> If you link Apple Health, Google Health Connect, Strava or another app, we send only the data types you approve. You can disconnect at any time.</li>
+          <li><strong>People you choose.</strong> For example, when you export an ECG report as a PDF to share with your doctor, or join a team with friends.</li>
+          <li><strong>Service providers.</strong> Trusted companies that host our servers, deliver orders or process payments, under strict contracts that forbid any other use.</li>
+          <li><strong>Legal requirements.</strong> Only when we're legally required to, and we'll tell you unless the law prevents us.</li>
+        </ul>
+
+        <h2 id="protect">How we protect it</h2>
+        <ul>
+          <li>Data is encrypted in transit (TLS 1.3) and at rest (AES-256).</li>
+          <li>Health data is stored separately from your name and email.</li>
+          <li>Only a small number of trained staff can access member data, only to resolve a support request, and every access is logged.</li>
+          <li>We run regular independent security audits and a public bug bounty programme.</li>
+        </ul>
+
+        <h2 id="control">Your controls</h2>
+        <p>Everything below is available in the app under <strong>Settings → Privacy</strong>:</p>
+        <ul>
+          <li><strong>See</strong> all the data we hold about you.</li>
+          <li><strong>Export</strong> a full copy as CSV and PDF, ready within 48 hours.</li>
+          <li><strong>Turn off</strong> optional features and research sharing at any time.</li>
+          <li><strong>Delete</strong> individual records, or your entire account and all its data.</li>
+        </ul>
+        <p>You can also make any of these requests through our <a class="link" href="contact.html">contact page</a>. We respond within 30 days, and usually much sooner.</p>
+
+        <h2 id="retention">How long we keep it</h2>
+        <p>We keep your data while your account is active so your trends stay complete. If you delete your account, we erase your personal and health data within <strong>30 days</strong>, and from backups within 90 days. Order records are kept for as long as tax law requires.</p>
+
+        <h2 id="research">Research</h2>
+        <p>Research helps us make D'Vync more accurate. Taking part is <strong>always optional and off by default</strong>. If you opt in, we only use de-identified data, and you can opt out at any time without affecting your membership.</p>
+
+        <h2 id="children">Children</h2>
+        <p>D'Vync memberships are for people aged 16 and over. We don't knowingly collect data from children under 16; if we learn that we have, we delete it.</p>
+
+        <h2 id="changes">Changes &amp; contact</h2>
+        <p>If we make a meaningful change to this policy, we'll tell you in the app and by email before it takes effect.</p>
+        <div class="callout">Questions about your data? <a class="link" href="contact.html">Contact our privacy team</a>. We reply within one business day. D'Vync is a wellness product, not a medical device. This is a demo store and this policy is sample content.</div>
+      </div>
+    </div>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

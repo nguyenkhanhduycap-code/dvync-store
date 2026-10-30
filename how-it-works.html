@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How D'Vync Works | Sleep, Recovery, Strain &amp; Heart Health</title>
+  <meta name="description" content="See how D'Vync works: a screenless band you wear 24/7 that measures sleep, recovery, stress, strain and heart health, and turns them into a daily plan.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d0d0e'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F2F1EE' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%232FD6A6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hiw.css">
+</head>
+<!-- How it works: hero, statement, wear it 24/7, what D'Vync measures (tabs + numbered accordions),
+     blood pressure, heart, healthspan, women's health, first 30 days, memberships, FAQ, CTA.
+     Behaviour lives in js/hiw.js. -->
+<body data-page="how">
+  <div data-include="promo"></div>
+  <div data-include="header"></div>
+
+  <main class="hiw">
+
+    <!-- 1. Hero: full-bleed photo (landscape on desktop, portrait on phones) -->
+    <section class="hiw-hero">
+      <div class="hiw-hero-layer"><picture>
+        <source media="(max-width: 700px)" srcset="material/hiw/How_it_works_mobile_hero_v2.webp">
+        <img src="material/hiw/How_it_works_desktop_hero_v2.webp" alt="A hand wearing a D'Vync mesh band, framed by a round sculpture">
+      </picture></div>
+      <div class="hiw-hero-shade"></div>
+      <div class="wrap-h hiw-hero-copy">
+        <p class="hiw-kicker">How it works</p>
+        <h1>Your body,<br>decoded daily.</h1>
+        <p class="hiw-hero-sub">D'Vync reads your heart, breathing, skin temperature and movement around the clock, then turns it all into one clear plan for today.</p>
+        <div class="hiw-hero-actions">
+          <a href="shop.html?cat=memberships" class="btn btn-white">Join now</a>
+          <a href="#pillars" class="btn btn-outline">Explore the features</a>
+        </div>
+      </div>
+      <a href="#statement" class="hiw-scroll" aria-label="Scroll to learn more"><span></span></a>
+    </section>
+
+    <!-- 2. Statement: words light up as you scroll -->
+    <section class="wrap-h hiw-statement" id="statement">
+      <p class="hiw-eyebrow" data-reveal>One sensor. Every signal.</p>
+      <h2 class="hiw-fill" data-fill>No screen to check, no buttons to press. Put it on and forget it's there. D'Vync measures what your body is doing every second, and every morning it tells you what to do next.</h2>
+    </section>
+
+    <!-- 3. Wear it 24/7 -->
+    <section class="wrap-h hiw-wear">
+      <div class="hiw-head">
+        <h2 class="hiw-h2" data-reveal>Wear it 24/7</h2>
+        <p data-reveal="100">The more you wear it, the better it knows you. That's why it's light enough to sleep in, tough enough to climb in and good-looking enough to wear to dinner.</p>
+      </div>
+      <div class="wear-grid">
+        <figure class="wear-card" data-reveal>
+          <div class="wear-img"><img src="material/hiw/Wear_it_24_7.webp" alt="Two people against a painted wall, one wearing a black mesh band" loading="lazy"></div>
+          <figcaption><strong>Style it</strong><span>Swap bands in seconds, from knit to leather to metal.</span></figcaption>
+        </figure>
+        <figure class="wear-card" data-reveal="80">
+          <div class="wear-img"><img src="material/hiw/Wear_it_24_7__1_.webp" alt="Climber gripping a rock face while wearing a band" loading="lazy"></div>
+          <figcaption><strong>Push it</strong><span>Waterproof to 10 m and built for chalk, sweat and dirt.</span></figcaption>
+        </figure>
+        <figure class="wear-card" data-reveal="160">
+          <div class="wear-img"><img src="material/hiw/Wear_it_24_7__3_.webp" alt="Woman checking her phone while wearing a tan leather band" loading="lazy"></div>
+          <figcaption><strong>Live with it</strong><span>Everything syncs to the app in the background.</span></figcaption>
+        </figure>
+        <figure class="wear-card" data-reveal="240">
+          <div class="wear-img"><img src="material/hiw/Wear_it_24_7__4_.webp" alt="Person writing in a notebook with a band on their wrist" loading="lazy"></div>
+          <figcaption><strong>Forget it</strong><span>No screen, no pings, no distractions.</span></figcaption>
+        </figure>
+      </div>
+      <ul class="spec-row" data-reveal>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="16" height="8" rx="2"/><path d="M21 11v2M6 11v2M9 11v2M12 11v2"/></svg><strong>5+ days</strong><span>battery life</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg><strong>10 m</strong><span>water resistant</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="16" rx="3"/><path d="M12.5 8l-2.5 4h4l-2.5 4"/></svg><strong>On-wrist</strong><span>charging</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><strong>24/7</strong><span>measurement</span></li>
+      </ul>
+    </section>
+
+    <!-- 4. What D'Vync measures: pill tabs; each tab is a numbered accordion whose open item picks the phone screen -->
+    <section class="hiw-measure" id="pillars">
+      <div class="wrap-h">
+        <h2 class="measure-title" data-reveal>What D'Vync measures</h2>
+        <div class="m-tabs" role="tablist" aria-label="What D'Vync measures" data-reveal="80">
+          <button class="m-tab is-active" role="tab" aria-selected="true" aria-controls="tab-sleep" id="t-sleep">Optimize sleep</button>
+          <button class="m-tab" role="tab" aria-selected="false" aria-controls="tab-strain" id="t-strain" tabindex="-1">Train smarter</button>
+          <button class="m-tab" role="tab" aria-selected="false" aria-controls="tab-recovery" id="t-recovery" tabindex="-1">Recover faster</button>
+          <button class="m-tab" role="tab" aria-selected="false" aria-controls="tab-stress" id="t-stress" tabindex="-1">Manage stress</button>
+          <button class="m-tab" role="tab" aria-selected="false" aria-controls="tab-routines" id="t-routines" tabindex="-1">Build routines</button>
+          <button class="m-tab" role="tab" aria-selected="false" aria-controls="tab-health" id="t-health" tabindex="-1">Monitor health</button>
+        </div>
+
+        <div class="m-panels" data-reveal="120">
+          <!-- Sleep -->
+          <div class="m-panel is-active" role="tabpanel" id="tab-sleep" aria-labelledby="t-sleep">
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Sleep, measured properly</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/Sleep_1.webp" alt="Hours of sleep with heart rate through the night">
+                <img src="material/hiw/Sleep_2.webp" alt="Sleep needed, broken down into baseline, strain, sleep debt and naps" loading="lazy">
+                <img src="material/hiw/dv-Sleep_3.webp" alt="Sleep performance score of 74 percent" loading="lazy">
+                <img src="material/hiw/Sleep_4.webp" alt="Sleep planner suggesting a bedtime for a set wake time" loading="lazy">
+                <img src="material/hiw/Sleep_5.webp" alt="A week of hours slept against hours needed" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>Track every sleep stage</button></h4><div class="nacc-body"><div><p>D'Vync detects light, deep and REM sleep, plus time awake, from your heart rate and movement. No buttons and nothing to log.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">02</span>Know how much sleep you need</button></h4><div class="nacc-body"><div><p>Your sleep need starts from your own baseline, then adds time for today's strain and any sleep debt, and takes off time for naps.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">03</span>Raise your sleep performance</button></h4><div class="nacc-body"><div><p>How well you slept matters as much as how long. One score weighs the hours you got against the hours you needed, along with consistency, efficiency and wake-ups.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">04</span>Plan your ideal night</button></h4><div class="nacc-body"><div><p>Choose a goal and a wake time. The sleep planner suggests when to get into bed, and a silent vibration wakes you without disturbing anyone else.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">05</span>See your sleep trends</button></h4><div class="nacc-body"><div><p>Look back over a week, a month or a year to spot patterns and build a routine that holds.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strain -->
+          <div class="m-panel" role="tabpanel" id="tab-strain" aria-labelledby="t-strain" hidden>
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Train with a purpose</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/dv-Strain_1.webp" alt="Day strain score of 14.2" loading="lazy">
+                <img src="material/hiw/Strain_2__3_.webp" alt="Time spent in each heart rate zone" loading="lazy">
+                <img src="material/hiw/dv-Strain_3.webp" alt="A suggested workout with duration, intensity and estimated strain" loading="lazy">
+                <img src="material/hiw/Strain_4.webp" alt="Activity strain split between cardio and muscular load" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>How strain is measured</button></h4><div class="nacc-body"><div><p>Strain adds up the load on your heart and muscles across the whole day, from a hard session to a long walk, on a scale from 0 to 21.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">02</span>Read your heart rate zones</button></h4><div class="nacc-body"><div><p>See how long you spent in each zone, so easy days stay easy and hard days are hard enough.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">03</span>Get a daily strain target</button></h4><div class="nacc-body"><div><p>Each morning your coach suggests a workout and a strain target matched to how recovered you are.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">04</span>Count every lift</button></h4><div class="nacc-body"><div><p>Strength sessions are split into cardio and muscular load, and each one is compared with your past workouts.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recovery -->
+          <div class="m-panel" role="tabpanel" id="tab-recovery" aria-labelledby="t-recovery" hidden>
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Recover on purpose</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/dv-Recovery_1.webp" alt="Recovery score of 85 percent" loading="lazy">
+                <img src="material/hiw/Recovery_2.webp" alt="Recovery inputs: heart rate variability, resting heart rate, respiratory rate and sleep" loading="lazy">
+                <img src="material/hiw/Recovery_3.webp" alt="A week of recovery scores as bars" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>How recovery is scored</button></h4><div class="nacc-body"><div><p>Every morning you get a score from 0 to 100%. Green means go, yellow means steady, red means take it easy today.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">02</span>Know when you're ready</button></h4><div class="nacc-body"><div><p>Heart rate variability, resting heart rate, breathing rate and sleep all feed in, and the app tells you which one moved your score.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">03</span>Follow the trend</button></h4><div class="nacc-body"><div><p>A week at a glance shows how training, travel and late nights add up, long before you'd feel it.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stress -->
+          <div class="m-panel" role="tabpanel" id="tab-stress" aria-labelledby="t-stress" hidden>
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Stay ahead of stress</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/Recovery_4.webp" alt="Stress gauge reading 1.5, medium" loading="lazy">
+                <img src="material/hiw/Recovery_5.webp" alt="Guided breathing session with a countdown" loading="lazy">
+                <img src="material/hiw/Recovery_6.webp" alt="Stress level through the day, rising in the afternoon" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>How stress is measured</button></h4><div class="nacc-body"><div><p>A simple 0&ndash;3 scale shows how stressed your body is right now, based on your heart rate and heart rate variability.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">02</span>Bring it back down</button></h4><div class="nacc-body"><div><p>Guided breathing sessions help you calm down or wake up, and you can watch your heart respond as you go.</p></div></div></div>
+                <div class="nacc-item"><h4><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">03</span>See the patterns</button></h4><div class="nacc-body"><div><p>Find exactly when stress climbed during the day and connect it to meetings, commutes or caffeine.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Routines -->
+          <div class="m-panel" role="tabpanel" id="tab-routines" aria-labelledby="t-routines" hidden>
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Habits that stick</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/Journal.webp" alt="Journal impact report: good sleep and reading in bed help, working late hurts" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>Log your day, see the impact</button></h4><div class="nacc-body"><div><p>Answer a few quick questions each morning about caffeine, alcohol, screens or late meals. After a few weeks you'll see exactly how much each habit helps or hurts your recovery.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health -->
+          <div class="m-panel" role="tabpanel" id="tab-health" aria-labelledby="t-health" hidden>
+            <div class="nacc" data-nacc>
+              <h3 class="nacc-title">Your vitals, at a glance</h3>
+              <div class="nacc-media">
+                <img class="is-active" src="material/hiw/Health_monitor.webp" alt="Live heart rate of 89 beats per minute" loading="lazy">
+              </div>
+              <div class="nacc-list">
+                <div class="nacc-item is-open"><h4><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>Check your key vitals</button></h4><div class="nacc-body"><div><p>Heart rate, heart rate variability, breathing rate, blood oxygen and skin temperature in one place, with a flag when anything moves outside your normal range.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Blood pressure -->
+    <section class="wrap-h hiw-split">
+      <div class="split-media" data-reveal><img src="material/hiw/How_it_Works_BP.webp" alt="Couple in bed, with today's blood pressure reading of 118 over 78" loading="lazy"></div>
+      <div class="split-copy">
+        <p class="hiw-eyebrow" data-reveal>Blood pressure insights</p>
+        <h2 class="hiw-h2" data-reveal="80">See the trend, not just one reading.</h2>
+        <p data-reveal="140">Calibrate once with a standard cuff and D'Vync estimates your blood pressure every day while you sleep. Watch how training, alcohol and stress move it over weeks and months.</p>
+        <a href="life.html" class="btn btn-white" data-reveal="200">Explore D'Vync Life</a>
+      </div>
+    </section>
+
+    <!-- 6. Heart: same image + accordion layout, larger, with +/- icons -->
+    <section class="wrap-h hiw-heart" id="heart">
+      <div class="nacc nacc-lg" data-nacc>
+        <h2 class="nacc-title" data-reveal>Stay close to your heart health</h2>
+        <div class="nacc-media" data-reveal="100">
+          <img class="is-active" src="material/hiw/Heart_1.webp" alt="ECG trace with an average of 90 beats per minute" loading="lazy">
+          <img src="material/hiw/Heart_2.webp" alt="ECG report showing a normal rhythm" loading="lazy">
+          <img src="material/hiw/Heart_3.webp" alt="Heart screener with an option to share the latest ECG report" loading="lazy">
+        </div>
+        <div class="nacc-list" data-reveal="160">
+          <div class="nacc-item is-open"><h3><button class="nacc-btn" aria-expanded="true"><span class="nacc-n">01</span>Take an ECG anytime<i class="nacc-pm" aria-hidden="true"></i></button></h3><div class="nacc-body"><div><p>Rest a finger on the sensor for 30 seconds to record an ECG whenever something feels off. Available with D'Vync Life.</p></div></div></div>
+          <div class="nacc-item"><h3><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">02</span>Share it with your doctor<i class="nacc-pm" aria-hidden="true"></i></button></h3><div class="nacc-body"><div><p>Each reading is checked for signs of an irregular rhythm, and any report can be exported as a PDF in one tap.</p></div></div></div>
+          <div class="nacc-item"><h3><button class="nacc-btn" aria-expanded="false"><span class="nacc-n">03</span>Get alerted early<i class="nacc-pm" aria-hidden="true"></i></button></h3><div class="nacc-body"><div><p>D'Vync flags heart rates that stay unusually high or low while you rest. It isn't a medical device, but it helps you start the right conversation.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Healthspan: big title and intro, then a full-width explainer video with a pause button -->
+    <section class="hiw-age" id="healthspan">
+      <div class="wrap-h age-head">
+        <h2 class="measure-title" data-reveal>Add healthy years, not just years</h2>
+        <p data-reveal="100">Healthspan looks at the key signals from your sleep, fitness and heart to estimate your D'Vync Age, the age your body is actually performing at, and how fast it's changing. Each month you'll see which habits will move it most.</p>
+      </div>
+      <div class="age-video">
+        <video muted loop playsinline preload="metadata" aria-label="Animation of a D'Vync Age score changing as daily habits improve or slip">
+          <source src="material/hiw/WHOOP_Web_WhoopAge_Explainer_16x9_Final__4_-compressed.mp4" type="video/mp4">
+        </video>
+        <!-- Our label over the clip's built-in one; it follows the clip's slow zoom (js/hiw.js) -->
+        <span class="age-label" aria-hidden="true">D'Vync Age</span>
+        <button class="age-toggle" aria-label="Pause video" aria-pressed="false">
+          <svg class="i-pause" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+          <svg class="i-play" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- 8. Women's health -->
+    <section class="wrap-h hiw-women">
+      <div class="hiw-head">
+        <h2 class="hiw-h2" data-reveal>Built for every stage.</h2>
+        <p data-reveal="100">Hormones change how you sleep, recover and train. D'Vync's coaching changes with them.</p>
+      </div>
+      <div class="women-grid">
+        <figure class="women-card" data-reveal>
+          <div class="women-img"><img src="material/hiw/Women-s_Health_2.webp" alt="Woman on the beach checking her phone, with a cycle day timeline" loading="lazy"></div>
+          <figcaption><strong>Cycle insights</strong><span>See which phase you're in and how it shifts your recovery and sleep.</span></figcaption>
+        </figure>
+        <figure class="women-card" data-reveal="80">
+          <div class="women-img"><img src="material/hiw/Women-s_Health_2__2_.webp" alt="Woman training on a bike with a baby in a carrier" loading="lazy"></div>
+          <figcaption><strong>Hormone-aware coaching</strong><span>Strain and sleep targets that follow your body, not a calendar.</span></figcaption>
+        </figure>
+        <figure class="women-card" data-reveal="160">
+          <div class="women-img"><img src="material/hiw/Women-s_Health_2__3_.webp" alt="Mother hugging her toddler, with menstruating and pregnant mode options" loading="lazy"></div>
+          <figcaption><strong>Pregnancy &amp; postpartum</strong><span>Switch modes and get guidance made for each trimester and the months after.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 9. First 30 days: a line that fills as you scroll -->
+    <section class="wrap-h hiw-days" id="first-30">
+      <div class="hiw-head">
+        <h2 class="hiw-h2" data-reveal>Your first 30 days.</h2>
+        <p data-reveal="100">Start with a free month. Here's what to expect as D'Vync learns your baseline.</p>
+      </div>
+      <div class="days" data-days>
+        <div class="days-line" aria-hidden="true"><i></i></div>
+        <article class="day" data-reveal>
+          <span class="day-dot" aria-hidden="true"></span>
+          <p class="day-n">Day 2</p>
+          <div class="day-img"><img src="material/hiw/Day_2.webp" alt="Man in glasses deep in thought" loading="lazy"></div>
+          <h3>Your first scores</h3>
+          <p>After your first full night, you wake up to sleep, recovery and strain scores.</p>
+        </article>
+        <article class="day" data-reveal="80">
+          <span class="day-dot" aria-hidden="true"></span>
+          <p class="day-n">Day 14</p>
+          <div class="day-img"><img src="material/hiw/Day_14_-_Free_trials.webp" alt="Man asleep wearing an eye mask" loading="lazy"></div>
+          <h3>Sleep, dialled in</h3>
+          <p>Your sleep need is calibrated to you, and the planner starts suggesting bedtimes.</p>
+        </article>
+        <article class="day" data-reveal="160">
+          <span class="day-dot" aria-hidden="true"></span>
+          <p class="day-n">Day 20</p>
+          <div class="day-img"><img src="material/hiw/Day_20_-_Free_trials.webp" alt="Parent holding a toddler with a pink toy" loading="lazy"></div>
+          <h3>Habits start to show</h3>
+          <p>With enough journal entries, you see which daily habits help or hurt your recovery.</p>
+        </article>
+        <article class="day" data-reveal="240">
+          <span class="day-dot" aria-hidden="true"></span>
+          <p class="day-n">Day 30</p>
+          <div class="day-img"><img src="material/hiw/Day_30_-_Free_trials.webp" alt="Man lifting a kettlebell in the gym" loading="lazy"></div>
+          <h3>Your baseline is set</h3>
+          <p>A month of data unlocks your trends and monthly report. Keep going, or send it back.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. Memberships -->
+    <section class="hiw-plans" id="plans">
+      <div class="wrap-h">
+        <div class="hiw-head center">
+          <h2 class="hiw-h2" data-reveal>Pick your membership.</h2>
+          <p data-reveal="100">Every plan includes the band, the app and free shipping.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan" data-reveal>
+            <div class="plan-img"><img src="material/dv-One_card__fr_.webp" alt="D'Vync One with app" loading="lazy"></div>
+            <div class="plan-body">
+              <h3>One</h3>
+              <p class="plan-desc">Sleep, recovery and strain, with daily coaching.</p>
+              <p class="price">$199<small>/year</small></p>
+              <a href="one.html" class="btn btn-ghost btn-block">Explore One</a>
+            </div>
+          </article>
+          <article class="plan featured" data-reveal="80">
+            <span class="badge">Most popular</span>
+            <div class="plan-img"><img src="material/dv-Peak_card__fr_.webp" alt="D'Vync Peak with app" loading="lazy"></div>
+            <div class="plan-body">
+              <h3>Peak</h3>
+              <p class="plan-desc">Adds healthspan, stress and heart alerts.</p>
+              <p class="price">$239<small>/year</small></p>
+              <a href="peak.html" class="btn btn-primary btn-block">Explore Peak</a>
+            </div>
+          </article>
+          <article class="plan" data-reveal="160">
+            <div class="plan-img"><img src="material/dv-Life_card__3_.webp" alt="D'Vync Life with app" loading="lazy"></div>
+            <div class="plan-body">
+              <h3>Life</h3>
+              <p class="plan-desc">Adds ECG and blood pressure insights.</p>
+              <p class="price">$359<small>/year</small></p>
+              <a href="life.html" class="btn btn-ghost btn-block">Explore Life</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ -->
+    <section class="wrap-h hiw-faq">
+      <h2 class="hiw-h2" data-reveal>Questions, answered.</h2>
+      <div class="faq-list" data-reveal="80">
+        <details class="acc"><summary>Do I have to wear it all the time?</summary><div class="acc-body"><div><p>The more you wear it, the more accurate it gets. Sleep is the most important time to wear it, because that's when recovery is measured.</p></div></div></details>
+        <details class="acc"><summary>How do I charge it without taking it off?</summary><div class="acc-body"><div><p>Slide the battery pack onto the band while you wear it. It charges in about 90 minutes, and you never lose data.</p></div></div></details>
+        <details class="acc"><summary>Does it work without my phone nearby?</summary><div class="acc-body"><div><p>Yes. The band stores several days of data and syncs as soon as your phone is back in range.</p></div></div></details>
+        <details class="acc"><summary>Which phones does it work with?</summary><div class="acc-body"><div><p>iPhone and Android phones from the last five years. It also connects to popular training apps.</p></div></div></details>
+        <details class="acc"><summary>Is it a medical device?</summary><div class="acc-body"><div><p>No. D'Vync is a wellness product and is not intended to diagnose, treat or prevent any condition. Talk to a healthcare professional about medical concerns.</p></div></div></details>
+      </div>
+      <p class="faq-more" data-reveal>More answers in our <a class="link" href="faq.html">help center</a>.</p>
+    </section>
+
+    <!-- 12. Closing CTA -->
+    <section class="wrap-h">
+      <div class="hiw-cta" data-reveal>
+        <img src="material/image__8_.webp" alt="" loading="lazy">
+        <div class="hiw-cta-copy">
+          <h2>Try it free for 30 days.</h2>
+          <p>Wear it, sleep in it, train with it. If it's not for you, send it back.</p>
+          <a href="shop.html?cat=memberships" class="btn btn-white">Start your free month</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/hiw.js"></script>
+</body>
+</html>
