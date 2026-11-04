@@ -21,7 +21,7 @@
   if (st) st.textContent = topics.length;
 
   // ----- Hero backdrop: three slowly flowing bands drawn with WebGL -----
-  // Top: red fluid with dark cores on white. Middle: soft grey smoke. Bottom: white contour lines
+  // Top: lime fluid with charcoal cores on off-white (brand colours). Middle: soft grey smoke. Bottom: white contour lines
   // and dots on black, like a moving terrain scan. Falls back to the still image if WebGL is missing.
   (function heroFlow() {
     var hero = document.querySelector('.jr-hero');
@@ -67,12 +67,12 @@
       '  vec3 col;',
       '  if (y > 0.71) {',                   // top band: red fluid
       '    float v = stretch(warp(uv * 0.5 + vec2(t * 0.03, 0.0), t * 0.08), 1.7);',
-      '    vec3 white = vec3(0.97, 0.95, 0.95), pink = vec3(0.95, 0.58, 0.6), red = vec3(0.87, 0.3, 0.36), plum = vec3(0.34, 0.18, 0.34);',
+      '    vec3 white = vec3(0.961, 0.961, 0.941), pink = vec3(0.89, 0.985, 0.66), red = vec3(0.78, 0.98, 0.325), plum = vec3(0.161, 0.169, 0.176);',
       '    col = mix(white, pink, smoothstep(0.3, 0.34, v));',
       '    col = mix(col, red, smoothstep(0.42, 0.6, v));',
       '    col = mix(col, plum, smoothstep(0.84, 0.95, v));',
       '    float edge = 1.0 - smoothstep(0.004, 0.02, abs(v - 0.315));',   // thin dark outline at the fluid edge
-      '    col = mix(col, vec3(0.3, 0.1, 0.16), edge * 0.8);',
+      '    col = mix(col, vec3(0.043), edge * 0.8);',
       '  } else if (y > 0.3) {',             // middle band: grey smoke
       '    float v = stretch(warp(uv * 0.42 + vec2(-t * 0.025, 3.0), t * 0.06 + 4.0), 1.3);',
       '    float g = smoothstep(0.15, 0.9, v);',

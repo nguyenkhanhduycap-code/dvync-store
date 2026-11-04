@@ -1,20 +1,20 @@
 /* Why D'Vync page. Light and dark sections over a sticky hero; built on style.css tokens.
    Sizes follow a 1105px content column (80px side gutters at 1265px). */
-.why { background: #000; color: #fff; }
+.why { background: #0b0b0b; color: #fff; }
 .why :where(section) { padding-block: 0; }
 .wrap-w { width: 100%; max-width: 1265px; margin: 0 auto; padding-inline: clamp(20px, 6.3vw, 80px); }
-.btn-white { background: #fff; color: #000; border-color: #fff; }
-.btn-white:hover { background: #e7e8ec; }
+.btn-white { background: #f5f5f0; color: #0b0b0b; border-color: #f5f5f0; }
+.btn-white:hover { background: #fff; }
 /* Outline button with square-ish corners */
 .btn-line { padding: 17px 38px; border-radius: 8px; border: 1px solid #fff; color: #fff; background: transparent; font-size: 13.5px; }
-.btn-line:hover { background: #fff; color: #000; }
-.btn-line.dark-line { border-color: #000; color: #000; }
-.btn-line.dark-line:hover { background: #000; color: #fff; }
+.btn-line:hover { background: #fff; color: #0b0b0b; }
+.btn-line.dark-line { border-color: #0b0b0b; color: #0b0b0b; }
+.btn-line.dark-line:hover { background: #0b0b0b; color: #fff; }
 
 /* Hero: sticky; the photo drifts and dims as the page slides over it (js/why.js) */
 .why-hero { position: sticky; top: 0; z-index: 0; height: 100svh; min-height: 560px; display: flex; align-items: center; overflow: hidden; }
 .why-hero-layer { position: absolute; left: 0; right: 0; top: 0; height: 118%; will-change: transform; }
-.why-hero-layer { background: #000; }
+.why-hero-layer { background: #0b0b0b; }
 .why-hero-video { width: 100%; height: 100%; object-fit: cover; animation: heroZoom 2.6s var(--ease) both; }
 .why-hero-toggle { position: absolute; z-index: 2; right: 32px; bottom: 32px; width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.6); background: rgba(0,0,0,.3); color: #fff; display: grid; place-items: center; cursor: pointer; transition: background .25s, border-color .25s; }
 .why-hero-toggle:hover { background: rgba(0,0,0,.6); border-color: #fff; }
@@ -22,24 +22,24 @@
 .why-hero-toggle[aria-pressed="true"] .i-play { display: block; }
 .why-hero-toggle[aria-pressed="true"] .i-pause { display: none; }
 .why-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.1) 60%), linear-gradient(0deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,0) 50%); }
-.why-hero-dim { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+.why-hero-dim { position: absolute; inset: 0; background: #0b0b0b; opacity: 0; pointer-events: none; }
 .why-hero-copy { position: relative; z-index: 1; will-change: transform, opacity; }
 .why-hero h1 { font-size: clamp(64px, 9.5vw, 120px); font-weight: 400; line-height: .8; letter-spacing: -.03em; animation: rise 1.3s .15s var(--ease) both; }
 
-.why-over { position: relative; z-index: 2; background: #000; }
+.why-over { position: relative; z-index: 2; background: #0b0b0b; }
 
 /* Sticky section nav: white bar, grey labels, the current section in black */
 .why-nav { position: sticky; top: var(--header-h); z-index: 20; background: #fff; transition: top .5s var(--ease); }
 .site-header.hide ~ main .why-nav { top: 0; }
 .why-nav-track { display: flex; justify-content: center; gap: 60px; height: 53px; align-items: center; padding-inline: 20px; overflow-x: auto; scrollbar-width: none; }
 .why-nav-track::-webkit-scrollbar { display: none; }
-.why-nav a { flex: none; font-size: 15.7px; font-weight: 600; letter-spacing: -.03em; text-transform: uppercase; color: #666; transition: color .3s; }
-.why-nav a:hover, .why-nav a.is-active { color: #000; }
+.why-nav a { flex: none; font-size: 15.7px; font-weight: 600; letter-spacing: -.03em; text-transform: uppercase; color: #a5a9ac; transition: color .3s; }
+.why-nav a:hover, .why-nav a.is-active { color: #0b0b0b; }
 
 /* Sections */
 .why-sec { padding-block: 92px; scroll-margin-top: calc(var(--header-h) + 53px); }
-.why-sec.light { background: #fff; color: #000; }
-.why-sec.dark { background: #000; color: #fff; }
+.why-sec.light { background: #fff; color: #0b0b0b; }
+.why-sec.dark { background: #0b0b0b; color: #fff; }
 .why-h3 { font-size: clamp(38px, 4.75vw, 60px); font-weight: 600; line-height: 1; letter-spacing: -.035em; }
 .why-h2 { font-size: clamp(32px, 3.7vw, 47px); font-weight: 600; line-height: 1; letter-spacing: -.035em; }
 .why-sec p { font-size: clamp(18px, 1.82vw, 23px); line-height: 1.3; }
@@ -69,14 +69,14 @@
 .why-big { font-size: clamp(48px, 7.25vw, 92px); font-weight: 400; line-height: .9; letter-spacing: -.03em; }
 .why-big .line { display: block; }
 .why-big .line + .line { margin-top: .18em; }
-.why-big .w { color: #33363d; transition: color .5s; }
+.why-big .w { color: #292b2d; transition: color .5s; }
 .why-big .w.on { color: #fff; }
 
 /* Closing CTA */
 .why-end { padding-block: 92px 140px; }
-.why-end-inner { text-align: center; display: grid; justify-items: center; gap: 22px; border-top: 1px solid #1d1f25; padding-top: 110px; }
+.why-end-inner { text-align: center; display: grid; justify-items: center; gap: 22px; border-top: 1px solid #292b2d; padding-top: 110px; }
 .why-end-inner .why-h2 { font-size: clamp(40px, 5.6vw, 72px); font-weight: 400; }
-.why-end-inner p { color: #b9bdc9; max-width: 560px; }
+.why-end-inner p { color: #a5a9ac; max-width: 560px; }
 .why-end-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
 
 /* Floating join button */
