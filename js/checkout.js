@@ -37,7 +37,7 @@
       '<div class="sum-row" style="margin-top:12px"><span>Subtotal</span><span>' + money(t.subtotal) + '</span></div>' +
       (t.discount ? '<div class="sum-row discount"><span>Promo ' + esc(t.promo) + '</span><span>−' + money(t.discount) + '</span></div>' : '') +
       '<div class="sum-row"><span>Shipping (' + esc(t.shippingMethod.label.toLowerCase()) + ')</span><span>' + (t.shipping ? money(t.shipping) : 'Free') + '</span></div>' +
-      '<div class="sum-row"><span>Tax</span><span>' + money(t.tax) + '</span></div>' +
+      '<div class="sum-row"><span>VAT</span><span>Included</span></div>' +
       '<div class="sum-row total"><span>Total</span><span>' + money(t.total) + '</span></div>';
     return t;
   }

@@ -38,8 +38,8 @@
   };
   var RETURNS = '<p><strong>30-day returns.</strong> Not for you? Send it back within 30 days of delivery for a full refund, even if you\'ve worn it. ' +
     'Hardware has a 1-year limited warranty.</p><p>Read our <a class="link" href="returns.html">returns &amp; refunds policy</a>.</p>';
-  var SHIPPING = '<p><strong>Free standard shipping</strong> on orders over $' + window.DV_STORE.freeShippingMin + '. Memberships always ship free.</p>' +
-    '<ul><li>Standard: 3–5 business days ($6.95 under $75)</li><li>Express: 1–2 business days ($14.95)</li><li>Orders placed before 2 pm ship the same day.</li></ul>' +
+  var SHIPPING = '<p><strong>Free standard shipping</strong> on orders over ' + window.Cart.money(window.DV_STORE.freeShippingMin) + '. Memberships always ship free.</p>' +
+    '<ul><li>Standard: 3–5 business days (30,000 VND under 750,000 VND)</li><li>Express: 1–2 business days (60,000 VND)</li><li>Orders placed before 2 pm ship the same day.</li></ul>' +
     '<p>See the full <a class="link" href="shipping.html">shipping policy</a>.</p>';
 
   function acc(title, body, open, id) {

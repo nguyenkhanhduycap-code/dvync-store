@@ -51,7 +51,7 @@
           '<div class="sum-row"><span>Subtotal (' + Cart.count() + ' items)</span><span>' + money(t.subtotal) + '</span></div>' +
           (t.discount ? '<div class="sum-row discount"><span>Promo ' + esc(t.promo) + '</span><span>−' + money(t.discount) + '</span></div>' : '') +
           '<div class="sum-row"><span>Shipping (standard)</span><span>' + (t.shipping ? money(t.shipping) : 'Free') + '</span></div>' +
-          '<div class="sum-row"><span>Estimated tax</span><span>' + money(t.tax) + '</span></div>' +
+          '<div class="sum-row"><span>VAT</span><span>Included</span></div>' +
           '<div class="sum-row total"><span>Total</span><span>' + money(t.total) + '</span></div>' +
           '<form class="promo-form" id="promo-form"><label class="sr-only" for="promo">Promo code</label>' +
             '<input id="promo" placeholder="Promo code" value="' + esc(t.promo) + '" autocomplete="off">' +

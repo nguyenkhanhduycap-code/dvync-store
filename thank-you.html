@@ -62,7 +62,7 @@
           '<div>' +
             (order.totals.discount ? '<div class="sum-row discount"><span>Promo ' + esc(order.totals.promo) + '</span><span>−' + money(order.totals.discount) + '</span></div>' : '') +
             '<div class="sum-row"><span>Shipping (' + esc(order.shipping.label.toLowerCase()) + ')</span><span>' + (order.totals.shipping ? money(order.totals.shipping) : 'Free') + '</span></div>' +
-            '<div class="sum-row"><span>Tax</span><span>' + money(order.totals.tax) + '</span></div>' +
+            '<div class="sum-row"><span>VAT</span><span>Included</span></div>' +
             '<div class="sum-row total"><span>Total</span><span>' + money(order.totals.total) + '</span></div>' +
           '</div>' +
           '<div class="small muted"><strong style="color:var(--ink)">Shipping to</strong><br>' + order.address.map(esc).join('<br>') + '</div>' +

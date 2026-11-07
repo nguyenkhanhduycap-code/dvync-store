@@ -35,7 +35,7 @@
       id: 'one', category: 'memberships', name: 'D\'Vync One', badge: null, tier: 'One', page: 'one.html',
       navImage: M + 'Frame_2085654392-1__1_ (1).webp',
       compareImage: M + 'One__2_.webp',
-      price: 199, billing: 'year', stock: 120,
+      price: 990000, billing: 'year', stock: 120,
       images: [M + 'plan-one.webp', M + 'Quantify_how_your_body_is_feeling__fr___1_.webp', M + 'dv-Strain__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
       short: 'Quality fitness tracking and coaching at the best price.',
@@ -50,7 +50,7 @@
       id: 'peak', category: 'memberships', name: 'D\'Vync Peak', badge: 'Most popular', tier: 'Peak', page: 'peak.html',
       navImage: M + 'Frame_2085654392__4_.webp',
       compareImage: M + 'Peak__3_.webp',
-      price: 239, billing: 'year', stock: 64,
+      price: 1290000, billing: 'year', stock: 64,
       images: [M + 'plan-peak.webp', M + 'dv-Extend_your_prime-fr.webp', M + 'Optimize_your_sleep__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
       short: 'Key health and longevity insights to perform for the long run.',
@@ -65,7 +65,7 @@
       id: 'life', category: 'memberships', name: 'D\'Vync Life', badge: 'Low stock', tier: 'Life', page: 'life.html',
       navImage: M + 'LIFE__1_ (1).webp',
       compareImage: M + 'Life__2_.webp',
-      price: 359, billing: 'year', stock: 8,
+      price: 1890000, billing: 'year', stock: 8,
       images: [M + 'plan-life.webp', M + 'Health_monitor__fr_.webp', M + 'Get_daily_Blood_Pressure_Insights.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
       short: 'Our most powerful sensor for clinical-grade health data.',
@@ -83,27 +83,27 @@
   // price, copy and features; each colourway lists its images in this order:
   // transparent studio shots first (render, then flat lay), then lifestyle photos.
   window.DV_FAMILIES = [
-    { id: 'knit', label: 'AeroKnit', name: 'AeroKnit Band', price: 49, image: M + 'Midnight_MG-8oJ5TTln-large.png',
+    { id: 'knit', label: 'AeroKnit', name: 'AeroKnit Band', price: 490000, image: M + 'Midnight_MG-8oJ5TTln-large.png',
       short: 'Soft, breathable knit made for 24/7 wear.',
       description: ['Our everyday band. A lightweight knit that breathes during training, stays soft through the night and dries fast after a shower.'],
       features: ['Breathable recycled-yarn knit', 'Quick-release clasp', 'Hand-wash and air dry'] },
-    { id: 'reflective', label: 'AeroKnit Reflective', name: 'AeroKnit Reflective Band', price: 59, image: M + 'reflective 5.0eclips-eC-_Dpdd-large.png', studioTile: true,
+    { id: 'reflective', label: 'AeroKnit Reflective', name: 'AeroKnit Reflective Band', price: 590000, image: M + 'reflective 5.0eclips-eC-_Dpdd-large.png', studioTile: true,
       short: 'Knit with reflective stripes that light up in headlights.',
       description: ['The same soft knit, woven with reflective stripes so you stay visible on early runs and late rides.'],
       features: ['Reflective woven stripes', 'Breathable knit', 'Quick-release clasp'] },
-    { id: 'sport', label: 'Velocity', name: 'Velocity Band', price: 59, image: M + 'gravity lifestyle 2-rxHjpgvR-large.png',
+    { id: 'sport', label: 'Velocity', name: 'Velocity Band', price: 590000, image: M + 'gravity lifestyle 2-rxHjpgvR-large.png',
       short: 'Smooth, sweat-proof silicone with airflow channels.',
       description: ['Built for the hardest sessions. Flexible silicone with ventilated channels that keep the sensor in place when you sweat.'],
       features: ['Sweat- and water-proof silicone', 'Ventilated airflow channels', 'Wipe clean in seconds'] },
-    { id: 'trail', label: 'Summit', name: 'Summit Band', price: 79, image: M + 'PDP_Navigator_Evergr-jcYqI868-large.png',
+    { id: 'trail', label: 'Summit', name: 'Summit Band', price: 790000, image: M + 'PDP_Navigator_Evergr-jcYqI868-large.png',
       short: 'Hook-and-loop band built for the outdoors.',
       description: ['A rugged, adjustable hook-and-loop band with a reinforced edge, made for climbing, hiking and everything in between.'],
       features: ['Infinitely adjustable fit', 'Abrasion-resistant weave', 'Reinforced contrast edge'] },
-    { id: 'mesh', label: 'Halo', name: 'Halo Mesh Band', price: 149, image: M + 'PDP_Meridian_Gold_2 -dzqNTzPn-large.jpeg',
+    { id: 'mesh', label: 'Halo', name: 'Halo Mesh Band', price: 1490000, image: M + 'PDP_Meridian_Gold_2 -dzqNTzPn-large.jpeg',
       short: 'Fine stainless-steel mesh with a sliding clasp.',
       description: ['Polished stainless-steel mesh that drapes like fabric and adjusts with a sliding clasp. Made to go from the office to dinner.'],
       features: ['Stainless-steel mesh', 'Sliding adjustable clasp', 'Polished finish'] },
-    { id: 'leather', label: 'Heritage', name: 'Heritage Leather Band', price: 129, image: M + '3 (1)-ToWZysso-large.png',
+    { id: 'leather', label: 'Heritage', name: 'Heritage Leather Band', price: 1290000, image: M + '3 (1)-ToWZysso-large.png',
       short: 'Smooth full-grain leather with a classic buckle.',
       description: ['Full-grain leather that softens with wear, finished with a metal buckle and keeper for a timeless look.'],
       features: ['Full-grain leather', 'Metal buckle and keeper', 'Wipe with a dry cloth'] }
@@ -150,7 +150,7 @@
     band('reflective-red', 'reflective', 'Red', ['mg relfective solar-xsBTEe39-large.png', 'PDP_Solar-2 (1)--HsZWjSV-large.png'], 2, { isNew: true, badge: 'Reflective', rating: 4.8, reviewCount: 41 }),
     band('knit-forest', 'knit', 'Forest', ['Niall render 2 5-m_zuq9VQ-large.png', 'Niall 5 flat 2-FKOT68Bn-large.png'], 2, { isNew: true, badge: 'New', rating: 4.9, reviewCount: 37 }),
     band('knit-coffee', 'knit', 'Coffee', ['PDP_Coffee-39ePZKHd-large.png', 'Coffee MG horizontal-MPXoLgE7-large.png'], 2, { isNew: true, badge: 'New', reviewCount: 52 }),
-    band('knit-coffee-gold', 'knit', 'Coffee & Gold', ['mg coffee and golds-FfxYkqOz-large.png', 'Coffee with Gold MG -BGVFwfXE-large.png'], 2, { price: 59, reviewCount: 88 }),
+    band('knit-coffee-gold', 'knit', 'Coffee & Gold', ['mg coffee and golds-FfxYkqOz-large.png', 'Coffee with Gold MG -BGVFwfXE-large.png'], 2, { price: 590000, reviewCount: 88 }),
     band('knit-navy', 'knit', 'Navy', ['Render_R_1300x1500_5-kRT-flaM-large.png', 'Flat_overlay_2-52ruFqFW-large.png', 'Midnight_MG-8oJ5TTln-large.png'], 2, { bestSeller: true, rating: 4.8, reviewCount: 612 }),
     band('knit-graphite', 'knit', 'Graphite', ['grpahtie titanium mg-G_aBiby1-large.png', 'MG graphite with tia-eZQlh-Pj-large.png'], 2, { bestSeller: true, reviewCount: 455 }),
     band('knit-matte-black', 'knit', 'Matte Black', ['matte black-xea3HZW5-large.png'], 1, { stock: 4, reviewCount: 301 }),
@@ -192,12 +192,12 @@
   };
 
   window.DV_STORE = {
-    currency: 'USD',
-    freeShippingMin: 75,
-    taxRate: 0.08,
+    currency: 'VND',
+    freeShippingMin: 750000,
+    taxRate: 0,   // VAT is already included in every VND price
     shipping: [
-      { id: 'standard', label: 'Standard', detail: '3–5 business days', price: 6.95 },
-      { id: 'express', label: 'Express', detail: '1–2 business days', price: 14.95 }
+      { id: 'standard', label: 'Standard', detail: '3–5 business days', price: 30000 },
+      { id: 'express', label: 'Express', detail: '1–2 business days', price: 60000 }
     ],
     promos: { DVYNC10: 0.10, WELCOME15: 0.15 }
   };
@@ -209,7 +209,7 @@
       { id: 'one', includes: 'D\'Vync sensor, wired charger, Onyx knit band', cta: 'Start with One' },
       { id: 'peak', includes: 'D\'Vync sensor, Power Pack, Onyx knit band', cta: 'Start with Peak' },
       { id: 'life', includes: 'D\'Vync Pro sensor, Power Pack, Luxe band', cta: 'Start with Life' },
-      { id: 'free', title: 'Free month', includes: 'D\'Vync sensor, wired charger, Onyx knit band', cta: 'Start free month', price: '30 days free, then $199/yr' }
+      { id: 'free', title: 'Free month', includes: 'D\'Vync sensor, wired charger, Onyx knit band', cta: 'Start free month', price: '30 days free, then 990,000 VND/yr' }
     ],
     rows: [
       { icon: 'card', label: 'HSA/FSA eligible', in: ['one', 'peak', 'life', 'free'] },

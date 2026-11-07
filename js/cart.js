@@ -111,7 +111,7 @@
   function round(n) { return Math.round(n * 100) / 100; }
 
   Cart.money = function (n) {
-    return '$' + Number(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    return Number(n).toLocaleString('en-US', { maximumFractionDigits: 0 }) + ' VND';
   };
 
   // Keep every cart badge on the page in sync

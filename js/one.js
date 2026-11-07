@@ -70,7 +70,7 @@
     html += rowOf('cmp-img', function (c) {
       return '<div><img src="' + esc(c.p.compareImage || c.p.images[0]) + '" alt="' + esc((c.p.tier || c.p.name) + ' band and charger') + '" loading="lazy"></div>';
     });
-    html += rowOf('cmp-price', function (c) { return esc(c.col.price || ('Available at $' + c.p.price + '/yr')); });
+    html += rowOf('cmp-price', function (c) { return esc(c.col.price || ('Available at ' + window.Cart.money(c.p.price) + '/yr')); });
     html += rowOf('cmp-cta', function (c) {
       return c.col.id === CURRENT || c.col.id === 'free'
         ? '<button class="btn btn-white" data-join="' + c.col.id + '">' + esc(c.col.cta) + '</button>'

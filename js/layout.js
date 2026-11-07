@@ -19,7 +19,7 @@
   }
 
   var promo =
-    '<div class="promo"><p>Free shipping on orders over $75 &mdash; plus 30-day returns. <a href="shop.html">Shop now</a></p></div>';
+    '<div class="promo"><p>Free shipping on orders over 750,000 VND &mdash; plus 30-day returns. <a href="shop.html">Shop now</a></p></div>';
 
   var header =
     '<header class="site-header" id="top">' +
