@@ -1,15 +1,16 @@
-/* Membership landing page (D'Vync One): comparison table, auto-advancing feature
-   list, join buttons (add the plan and go to the cart) and the floating join button. */
+/* Device and Premium landing pages: Free-vs-Premium comparison table, auto-advancing
+   feature list, join buttons (add the product and go to the cart) and the floating
+   join button. Shared by device.html and premium.html. */
 (function () {
   'use strict';
 
   var DV = window.DV, esc = DV.esc;
-  // Which plan this landing page sells (one.html, peak.html, life.html set <body data-plan>)
-  var CURRENT = document.body.dataset.plan || 'one';
+  // Which page this is (device.html or premium.html set <body data-plan>)
+  var CURRENT = document.body.dataset.plan || 'device';
 
-  // ----- Join: add the plan once and confirm with a toast; the visitor stays on the page -----
+  // ----- Join: add the product once and confirm with a toast; the visitor stays on the page -----
   function join(id, btn) {
-    var planId = id === 'free' ? 'one' : id;
+    var planId = id;
     var p = window.DV_findProduct(planId);
     var inCart = window.Cart.items().some(function (i) { return i.id === planId; });
     if (!inCart) {
@@ -57,8 +58,11 @@
   if (compareEl && cmp) {
     // One grid, row by row, so cells line up across plans and the title row can be sticky
     var cols = cmp.columns.map(function (col) {
-      var p = window.DV_findProduct(col.id === 'free' ? 'one' : col.id);
-      return { col: col, p: p, cur: col.id === CURRENT ? ' cur' : '' };
+      var p = window.DV_findProduct(col.id === 'free' ? 'device' : col.id);
+      // A device.html visitor (no software tier chosen yet) sees the Free column highlighted,
+      // since Free is what you get with just the device.
+      var isCur = col.id === CURRENT || (CURRENT === 'device' && col.id === 'free');
+      return { col: col, p: p, cur: isCur ? ' cur' : '' };
     });
     var rowOf = function (cls, fn) {
       return cols.map(function (c) { return '<div class="cmp-cell ' + cls + c.cur + '">' + fn(c) + '</div>'; }).join('');
@@ -72,7 +76,8 @@
     });
     html += rowOf('cmp-price', function (c) { return esc(c.col.price || ('Available at ' + window.Cart.money(c.p.price) + '/yr')); });
     html += rowOf('cmp-cta', function (c) {
-      return c.col.id === CURRENT || c.col.id === 'free'
+      if (c.col.id === 'free') return '<a class="btn btn-white" href="device.html">' + esc(c.col.cta) + '</a>';
+      return c.col.id === CURRENT
         ? '<button class="btn btn-white" data-join="' + c.col.id + '">' + esc(c.col.cta) + '</button>'
         : '<a class="btn btn-white" href="' + (c.p.page || 'product.html?id=' + c.p.id) + '">' + esc(c.col.cta) + '</a>';
     });
@@ -87,7 +92,7 @@
           '</div>';
       }).join('');
     });
-    compareEl.innerHTML = '<div class="cmp-scroll"><div class="cmp" data-reveal>' + html + '</div></div>' +
+    compareEl.innerHTML = '<div class="cmp-scroll"><div class="cmp" data-reveal style="--cmp-cols:' + cmp.columns.length + '">' + html + '</div></div>' +
       '<p class="cmp-foot">See product notes below.</p>';
     DV.refresh(compareEl);
   }

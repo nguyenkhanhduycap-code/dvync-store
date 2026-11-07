@@ -94,8 +94,11 @@
       var discount = code ? round(subtotal * store.promos[code]) : 0;
       var afterDiscount = subtotal - discount;
       var method = store.shipping.filter(function (m) { return m.id === (shippingId || 'standard'); })[0] || store.shipping[0];
+      // The device and Premium always ship free, same as the old memberships did; only an
+      // order that also has accessories needs to clear the free-shipping minimum.
+      var onlyMemberships = items.length > 0 && items.every(function (i) { return i.product.category === 'memberships'; });
       var shipping = 0;
-      if (items.length) {
+      if (items.length && !onlyMemberships) {
         shipping = method.price;
         if (method.id === 'standard' && afterDiscount >= store.freeShippingMin) shipping = 0;
       }

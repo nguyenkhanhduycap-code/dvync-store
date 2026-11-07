@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/one.css">
 </head>
-<!-- Membership landing page. Generated from one shared template for one.html, peak.html and life.html;
-     data-plan tells js/one.js which plan this page sells. -->
+<!-- Retired membership page, kept for reference only and no longer linked from nav, footer or other
+     pages (superseded by device.html + premium.html). Still uses the shared js/membership.js script
+     so the comparison table and buttons keep working for anyone who finds this URL directly. -->
 <body data-page="life" data-plan="life">
   <div data-include="promo"></div>
   <div data-include="header"></div>
@@ -61,7 +62,7 @@
               <li>Blood pressure insights</li>
               <li>Priority member support</li>
             </ul>
-            <button class="btn btn-white btn-block" data-join="life">Join with D'Vync Life</button>
+            <a class="btn btn-white btn-block" href="device.html">See the current device</a>
             <span class="hsa hsa-plain"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>HSA/FSA eligible</span>
           </div>
         </div>
@@ -69,7 +70,7 @@
       <p class="m-note" data-reveal>See product notes at the bottom of the page.</p>
     </section>
 
-    <!-- 4. Comparison (built by js/one.js from DV_PLAN_COMPARE) -->
+    <!-- 4. Comparison (built by js/membership.js from DV_PLAN_COMPARE) -->
     <section class="wrap-m m-compare-wrap">
       <h2 class="m-h2" data-reveal>Compare memberships</h2>
       <div class="m-compare" id="m-compare"></div>
@@ -106,9 +107,9 @@
       <div class="m-cta" data-reveal>
         <img src="material/Hero__29_.webp" alt="" loading="lazy">
         <div class="m-cta-copy">
-          <h2>Try it free for 30 days.</h2>
-          <p>Wear it, sleep in it, train with it. Keep going with the plan that suits you, or send it back.</p>
-          <button class="btn btn-white" data-join="free">Start your free month</button>
+          <h2>Free to start, Premium when you want more.</h2>
+          <p>Every device comes with the Free tier at no extra cost. Add Premium any time for deeper analysis.</p>
+          <a href="device.html" class="btn btn-white">See the device</a>
         </div>
       </div>
     </section>
@@ -123,7 +124,7 @@
   </main>
 
   <!-- Floating join button (appears after the hero) -->
-  <button class="sticky-join btn btn-white" data-join="life" aria-label="Join with D'Vync Life">Join now</button>
+  <a class="sticky-join btn btn-white" href="device.html" aria-label="See the current D'Vync device">See current device</a>
 
   <div data-include="footer"></div>
 
@@ -132,6 +133,6 @@
   <script src="js/cart.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="js/site.js"></script>
-  <script src="js/one.js"></script>
+  <script src="js/membership.js"></script>
 </body>
 </html>

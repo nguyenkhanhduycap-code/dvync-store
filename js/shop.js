@@ -13,13 +13,13 @@
   var SECTIONS = {
     all: {
       eyebrow: 'Shop', title: 'Everything you need to <br>know your body.',
-      text: 'Start with a membership. Every one includes the band. Then make it yours with straps and accessories.',
+      text: 'Start with the device. Then make it yours with straps and accessories.',
       doc: 'Shop'
     },
     memberships: {
-      eyebrow: 'Memberships', title: 'Find the membership <br>that fits you.',
-      text: 'Every membership includes the band, free shipping and your first month free. Upgrade any time.',
-      doc: 'Memberships'
+      eyebrow: 'Device & Premium', title: 'The device, and <br>the Premium subscription.',
+      text: 'One device, one subscription. See what Free and Premium each include.',
+      doc: 'Device & Premium'
     },
     accessories: {
       eyebrow: 'Accessories', title: 'Make it yours.',

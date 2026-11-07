@@ -7,9 +7,9 @@
   var M = 'material/';
 
   var membershipFaq = [
-    { q: 'Is the band included with a membership?', a: 'Yes. Every membership ships with the D\'Vync band, a knit strap and a charger at no extra cost. When you renew, you keep the same band.' },
-    { q: 'Can I switch plans later?', a: 'You can upgrade at any time and only pay the difference for the rest of your term. Downgrades take effect at your next renewal.' },
-    { q: 'What happens after the free month?', a: 'Your annual membership starts automatically on day 31. Cancel any time before then and you won\'t be charged. Just return the band within 30 days.' },
+    { q: 'Is the band included?', a: 'Yes. The D\'Vync device ships with the band and a charger at no extra cost. There\'s no separate band purchase required to get started.' },
+    { q: 'What\'s the difference between Free and Premium?', a: 'Free gives you heart rate, step count and sleep duration, for as long as you own the device, at no cost. Premium adds AI-driven deep analysis, sleep and recovery recommendations, and long-term trend reports for 499,000 VND a year.' },
+    { q: 'Can I switch between Free and Premium later?', a: 'Yes. You can start on Free and upgrade to Premium at any time, or cancel Premium and keep using the device on the Free tier.' },
     { q: 'Does it work with my phone?', a: 'D\'Vync works with iOS 16+ and Android 10+ through the free D\'Vync app. It also syncs with Apple Health, Google Health Connect and Strava.' }
   ];
   var bandFaq = [
@@ -32,49 +32,34 @@
 
   window.DV_PRODUCTS = [
     {
-      id: 'one', category: 'memberships', name: 'D\'Vync One', badge: null, tier: 'One', page: 'one.html',
+      id: 'device', category: 'memberships', name: 'D\'Vync Device', badge: null, tier: 'Device', page: 'device.html',
       navImage: M + 'Frame_2085654392-1__1_ (1).webp',
       compareImage: M + 'One__2_.webp',
-      price: 990000, billing: 'year', stock: 120,
+      price: 1490000, stock: 180,
       images: [M + 'plan-one.webp', M + 'Quantify_how_your_body_is_feeling__fr___1_.webp', M + 'dv-Strain__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
-      short: 'Quality fitness tracking and coaching at the best price.',
+      short: 'The screenless sensor and band. One purchase, wear it every day.',
       description: [
-        'D\'Vync One gives you the essentials: a daily recovery score, sleep tracking and a strain target that adapts to how ready your body is.',
-        'It\'s the simplest way to stop guessing. Wear the band around the clock and open the app each morning for a clear plan.'
+        'D\'Vync is a screenless wearable that tracks your heart rate, steps and sleep around the clock, with no display, no vibration and no notifications.',
+        'Buy it once. The band and charger are included, and you choose a Free or Premium plan for the app afterwards.'
       ],
-      features: ['Recovery, sleep and strain scores', 'Personalised daily coaching', 'Workout auto-detection', 'Community challenges', 'Band, knit strap and charger included'],
+      features: ['5-day battery, no screen to charge', 'Continuous heart rate, step and sleep tracking', 'Band, knit strap and charger included', 'Works with the free D\'Vync app', 'Choose Free or Premium after setup'],
       rating: 4.7, reviewCount: 1284, faq: membershipFaq, reviews: sampleReviews.membership
     },
     {
-      id: 'peak', category: 'memberships', name: 'D\'Vync Peak', badge: 'Most popular', tier: 'Peak', page: 'peak.html',
+      id: 'premium', category: 'memberships', name: 'D\'Vync Premium', badge: 'Most popular', tier: 'Premium', page: 'premium.html',
       navImage: M + 'Frame_2085654392__4_.webp',
       compareImage: M + 'Peak__3_.webp',
-      price: 1290000, billing: 'year', stock: 64,
+      price: 499000, billing: 'year', stock: 999,
       images: [M + 'plan-peak.webp', M + 'dv-Extend_your_prime-fr.webp', M + 'Optimize_your_sleep__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
-      short: 'Key health and longevity insights to perform for the long run.',
+      short: 'AI analysis, recovery recommendations and long-term trend reports.',
       description: [
-        'Peak adds the long view: healthspan and pace-of-aging insights, heart screening with alerts and cycle-aware coaching.',
-        'It\'s built for people who want to perform today without trading away tomorrow.'
+        'Premium adds AI-driven analysis on top of your Free data: sleep and recovery recommendations, and weekly and monthly trend reports.',
+        'Requires a D\'Vync device. Cancel any time and keep using Free at no extra cost.'
       ],
-      features: ['Everything in One', 'Healthspan & pace of aging', 'Heart screener & irregular rhythm alerts', 'Cycle insights', 'Monthly performance report'],
+      features: ['Everything in Free', 'AI-driven deep analysis', 'Sleep and recovery recommendations', 'Weekly and monthly trend reports', '499,000 VND a year'],
       rating: 4.8, reviewCount: 2310, faq: membershipFaq, reviews: sampleReviews.membership
-    },
-    {
-      id: 'life', category: 'memberships', name: 'D\'Vync Life', badge: 'Low stock', tier: 'Life', page: 'life.html',
-      navImage: M + 'LIFE__1_ (1).webp',
-      compareImage: M + 'Life__2_.webp',
-      price: 1890000, billing: 'year', stock: 8,
-      images: [M + 'plan-life.webp', M + 'Health_monitor__fr_.webp', M + 'Get_daily_Blood_Pressure_Insights.webp'],
-      video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
-      short: 'Our most powerful sensor for clinical-grade health data.',
-      description: [
-        'Life pairs our most advanced sensor with the deepest insights: blood pressure trends, on-demand ECG and priority support.',
-        'If you want the most complete picture of your health on your wrist, this is it.'
-      ],
-      features: ['Everything in Peak', 'Blood pressure insights', 'On-demand ECG', 'Premium Luxe clasp', 'Priority member support'],
-      rating: 4.9, reviewCount: 812, faq: membershipFaq, reviews: sampleReviews.membership
     }
   ];
 
@@ -177,7 +162,7 @@
   // here and to its group to give Accessories a sub-filter again.
   window.DV_CATEGORIES = [
     { id: 'all', label: 'All products' },
-    { id: 'memberships', label: 'Memberships' },
+    { id: 'memberships', label: 'Device & Premium' },
     { id: 'accessories', label: 'Accessories', group: ['bands'] },
     { id: 'bands', label: 'Bands', parent: 'accessories' }
   ];
@@ -202,30 +187,20 @@
     promos: { DVYNC10: 0.10, WELCOME15: 0.15 }
   };
 
-  // Membership comparison (used by the membership landing pages).
-  // Columns: the three plans plus the free month; each row says which columns include it.
+  // Free vs Premium software comparison (used by the device and premium landing pages).
+  // Both require owning the D'Vync device; each row says which column includes it.
   window.DV_PLAN_COMPARE = {
     columns: [
-      { id: 'one', includes: 'D\'Vync sensor, wired charger, Onyx knit band', cta: 'Start with One' },
-      { id: 'peak', includes: 'D\'Vync sensor, Power Pack, Onyx knit band', cta: 'Start with Peak' },
-      { id: 'life', includes: 'D\'Vync Pro sensor, Power Pack, Luxe band', cta: 'Start with Life' },
-      { id: 'free', title: 'Free month', includes: 'D\'Vync sensor, wired charger, Onyx knit band', cta: 'Start free month', price: '30 days free, then 990,000 VND/yr' }
+      { id: 'free', title: 'Free', includes: 'D\'Vync sensor and band (sold separately)', cta: 'Start free', price: 'Free forever' },
+      { id: 'premium', includes: 'D\'Vync sensor and band (sold separately)', cta: 'Start with Premium' }
     ],
     rows: [
-      { icon: 'card', label: 'HSA/FSA eligible', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'battery', label: '5-day battery life', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'charge', label: 'Charge while you wear it', in: ['peak', 'life'] },
-      { icon: 'gauge', label: 'Recovery, sleep & strain scores', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'coach', label: 'Personalised daily coaching', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'steps', label: 'Steps & activity tracking', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'alarm', label: 'Smart vibration alarm', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'cycle', label: 'Cycle insights', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'heart', label: 'Heart rate zones & VO₂ max', in: ['one', 'peak', 'life', 'free'] },
-      { icon: 'clock', label: 'Healthspan & pace of aging', in: ['peak', 'life'] },
-      { icon: 'stress', label: 'Stress monitor', in: ['peak', 'life'] },
-      { icon: 'pulse', label: 'Heart screener & alerts', in: ['peak', 'life'] },
-      { icon: 'drop', label: 'Blood pressure insights', in: ['life'] },
-      { icon: 'ecg', label: 'On-demand ECG', in: ['life'] }
+      { icon: 'pulse', label: 'Heart rate', in: ['free', 'premium'] },
+      { icon: 'steps', label: 'Step count', in: ['free', 'premium'] },
+      { icon: 'gauge', label: 'Sleep duration', in: ['free', 'premium'] },
+      { icon: 'coach', label: 'AI-driven deep analysis', in: ['premium'] },
+      { icon: 'battery', label: 'Recovery & sleep recommendations', in: ['premium'] },
+      { icon: 'clock', label: 'Long-term trend reports', in: ['premium'] }
     ]
   };
 
