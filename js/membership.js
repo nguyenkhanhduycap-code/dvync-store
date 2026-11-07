@@ -59,7 +59,10 @@
     // One grid, row by row, so cells line up across plans and the title row can be sticky
     var cols = cmp.columns.map(function (col) {
       var p = window.DV_findProduct(col.id === 'free' ? 'device' : col.id);
-      return { col: col, p: p, cur: col.id === CURRENT ? ' cur' : '' };
+      // A device.html visitor (no software tier chosen yet) sees the Free column highlighted,
+      // since Free is what you get with just the device.
+      var isCur = col.id === CURRENT || (CURRENT === 'device' && col.id === 'free');
+      return { col: col, p: p, cur: isCur ? ' cur' : '' };
     });
     var rowOf = function (cls, fn) {
       return cols.map(function (c) { return '<div class="cmp-cell ' + cls + c.cur + '">' + fn(c) + '</div>'; }).join('');
