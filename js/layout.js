@@ -32,7 +32,7 @@
         '<nav class="main-nav" id="main-nav" aria-label="Main" data-lenis-prevent>' +
           '<ul>' +
             '<li class="has-menu mega">' +
-              '<button class="menu-btn" aria-expanded="false">Memberships ' + chevron + '</button>' +
+              '<button class="menu-btn" aria-expanded="false">Device &amp; Premium ' + chevron + '</button>' +
               '<div class="dropdown dropdown-mem">' +
                 '<div class="mem-cards">' + memCards() + '</div>' +
               '</div>' +
@@ -55,11 +55,10 @@
           '<a href="index.html" class="logo" aria-label="D\'Vync home">' + mark + '<span class="logo-word">D\'Vync</span></a>' +
           '<p>Wearable health, without the screen.</p>' +
         '</div>' +
-        '<div><h4>Memberships</h4><ul>' +
-          '<li><a href="one.html">D\'Vync One</a></li>' +
-          '<li><a href="peak.html">D\'Vync Peak</a></li>' +
-          '<li><a href="life.html">D\'Vync Life</a></li>' +
-          '<li><a href="shop.html?cat=memberships">Compare all</a></li>' +
+        '<div><h4>Device &amp; Premium</h4><ul>' +
+          '<li><a href="device.html">D\'Vync Device</a></li>' +
+          '<li><a href="premium.html">D\'Vync Premium</a></li>' +
+          '<li><a href="shop.html?cat=memberships">Compare</a></li>' +
         '</ul></div>' +
         '<div><h4>Accessories</h4><ul>' +
           '<li><a href="shop.html?cat=bands">Bands</a></li>' +

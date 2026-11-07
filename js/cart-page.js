@@ -28,8 +28,8 @@
     var items = Cart.items();
     if (!items.length) {
       root.innerHTML = '<div class="cart-empty" data-reveal><h2>Your cart is empty.</h2>' +
-        '<p>Start with a membership. The band is included.</p>' +
-        '<a class="btn btn-primary" href="shop.html?cat=memberships">Shop memberships</a> ' +
+        '<p>Start with the device.</p>' +
+        '<a class="btn btn-primary" href="shop.html?cat=memberships">Shop now</a> ' +
         '<a class="btn btn-ghost" href="shop.html">Browse all</a></div>';
       DV.refresh(root);
       return;
