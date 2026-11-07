@@ -1,4 +1,4 @@
-/* Membership landing page (D'Vync One). Dark theme, built on style.css tokens. */
+/* Device + Premium landing pages. Dark theme, built on style.css tokens. */
 .m-page { background: #0b0b0b; color: #fff; }
 .wrap-m { width: 100%; max-width: 1280px; margin: 0 auto; padding-inline: 32px; }
 .btn-white { background: #f5f5f0; color: #0b0b0b; border-color: #f5f5f0; }
@@ -58,7 +58,7 @@
 .m-h2 { font-size: clamp(32px, 4vw, 52px); font-weight: 400; letter-spacing: -.02em; line-height: 1.05; margin-bottom: 40px; }
 .m-h2.big { font-size: clamp(44px, 6.4vw, 92px); }
 .m-compare-wrap { padding-block: 120px 40px; }
-.cmp { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 36px; }
+.cmp { display: grid; grid-template-columns: repeat(var(--cmp-cols, 2), minmax(0, 1fr)); column-gap: 36px; }
 .cmp-cell { padding: 0 16px; text-align: center; }
 /* Highlighted plan: one continuous #292b2d column with 16px rounded ends */
 .cmp-cell.cur { background: #292b2d; }
@@ -143,7 +143,7 @@
   .m-buy { padding: 24px; }
   .m-hero-copy { padding-bottom: 72px; }
   .cmp-scroll { overflow-x: auto; scrollbar-width: thin; }
-  .cmp { grid-template-columns: repeat(4, 230px); }
+  .cmp { grid-template-columns: repeat(var(--cmp-cols, 2), 230px); }
   .cmp-head { position: static; }
   .m-feat-media { order: -1; }
 }

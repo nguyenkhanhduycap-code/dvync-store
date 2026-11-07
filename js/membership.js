@@ -92,7 +92,7 @@
           '</div>';
       }).join('');
     });
-    compareEl.innerHTML = '<div class="cmp-scroll"><div class="cmp" data-reveal>' + html + '</div></div>' +
+    compareEl.innerHTML = '<div class="cmp-scroll"><div class="cmp" data-reveal style="--cmp-cols:' + cmp.columns.length + '">' + html + '</div></div>' +
       '<p class="cmp-foot">See product notes below.</p>';
     DV.refresh(compareEl);
   }
