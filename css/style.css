@@ -439,11 +439,12 @@ html.bg-flow body { will-change: background-color; }
 @media (min-width: 981px) {
   .has-menu.mega { position: static; }               /* panel positions against the header instead */
   .dropdown-mem {
-    top: calc(100% - 6px); left: 0; right: 0; margin: 0 auto;
-    width: min(1000px, calc(100vw - 48px)); padding: 22px;
+    top: calc(100% - 6px); left: 0; margin: 0; padding: 22px;
+    width: calc(260px * var(--mem-count, 3) + 16px * (var(--mem-count, 3) - 1) + 44px);
+    max-width: calc(100vw - 48px);
   }
 }
-.mem-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.mem-cards { display: grid; grid-template-columns: repeat(var(--mem-count, 3), 260px); gap: 16px; }
 .dropdown .mem-card {
   display: flex; flex-direction: column; padding: 0; border-radius: 18px; overflow: hidden;
   border: 1px solid #f5f5f0; background: #fff; transition: box-shadow .45s var(--ease), border-color .3s;
