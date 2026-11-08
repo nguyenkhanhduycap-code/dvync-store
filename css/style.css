@@ -439,7 +439,7 @@ html.bg-flow body { will-change: background-color; }
 @media (min-width: 981px) {
   .has-menu.mega { position: static; }               /* panel positions against the header instead */
   .dropdown-mem {
-    top: calc(100% - 6px); left: 0; margin: 0; padding: 22px;
+    top: calc(100% - 6px); left: 0; right: 0; margin: 0 auto; padding: 22px;
     width: calc(260px * var(--mem-count, 3) + 16px * (var(--mem-count, 3) - 1) + 44px);
     max-width: calc(100vw - 48px);
   }
