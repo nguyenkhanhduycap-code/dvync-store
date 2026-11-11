@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="100%" height="100%">
+<rect x="8" y="8" width="984" height="644" rx="12" ry="12" fill="#F8F8F5" stroke="#CBD0D4" stroke-width="1.5"/>
+<rect x="30" y="24" width="360" height="28" rx="5" ry="5" fill="#C7FA53" stroke="#9ED62B" stroke-width="1"/>
+<text x="210" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B" letter-spacing="0.5px">D'VYNC STOREFRONT INFORMATION ARCHITECTURE</text>
+<line x1="500" y1="125" x2="500" y2="155" stroke="#292B2D" stroke-width="2"/>
+<line x1="180" y1="155" x2="820" y2="155" stroke="#292B2D" stroke-width="2"/>
+<line x1="180" y1="155" x2="180" y2="180" stroke="#292B2D" stroke-width="2"/>
+<line x1="500" y1="155" x2="500" y2="180" stroke="#292B2D" stroke-width="2"/>
+<line x1="820" y1="155" x2="820" y2="180" stroke="#292B2D" stroke-width="2"/>
+<line x1="180" y1="240" x2="180" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="105" y1="265" x2="255" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="105" y1="265" x2="105" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="105" y1="355" x2="105" y2="385" stroke="#292B2D" stroke-width="2"/>
+<line x1="255" y1="265" x2="255" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="255" y1="355" x2="255" y2="385" stroke="#292B2D" stroke-width="2"/>
+<line x1="500" y1="240" x2="500" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="425" y1="265" x2="575" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="425" y1="265" x2="425" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="425" y1="355" x2="425" y2="385" stroke="#292B2D" stroke-width="2"/>
+<line x1="575" y1="265" x2="575" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="575" y1="355" x2="575" y2="385" stroke="#292B2D" stroke-width="2"/>
+<line x1="820" y1="240" x2="820" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="745" y1="265" x2="895" y2="265" stroke="#292B2D" stroke-width="2"/>
+<line x1="745" y1="265" x2="745" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="745" y1="355" x2="745" y2="385" stroke="#292B2D" stroke-width="2"/>
+<line x1="895" y1="265" x2="895" y2="290" stroke="#292B2D" stroke-width="2"/>
+<line x1="895" y1="355" x2="895" y2="385" stroke="#292B2D" stroke-width="2"/>
+<rect x="360" y="75" width="280" height="48" rx="8" ry="8" fill="#0B0B0B" stroke="#C7FA53" stroke-width="2.5"/>
+<text x="500" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14px" font-weight="bold" fill="#C7FA53" letter-spacing="0.8px">HOMEPAGE (dvync.com)</text>
+<rect x="60" y="180" width="240" height="56" rx="8" ry="8" fill="#292B2D" stroke="#A5A9AC" stroke-width="1.5"/>
+<text x="180" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="12px" font-weight="bold" fill="#FFFFFF" letter-spacing="0.4px">DEVICE &amp; PREMIUM</text>
+<text x="180" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53">device.html • premium.html</text>
+<rect x="380" y="180" width="240" height="56" rx="8" ry="8" fill="#292B2D" stroke="#A5A9AC" stroke-width="1.5"/>
+<text x="500" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="12px" font-weight="bold" fill="#FFFFFF" letter-spacing="0.4px">ACCESSORIES &amp; GEAR</text>
+<text x="500" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53">accessories.html • bands</text>
+<rect x="700" y="180" width="240" height="56" rx="8" ry="8" fill="#292B2D" stroke="#A5A9AC" stroke-width="1.5"/>
+<text x="820" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="12px" font-weight="bold" fill="#FFFFFF" letter-spacing="0.4px">CALM TECH &amp; DISCOVERY</text>
+<text x="820" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53">how-it-works.html • why-dvync.html</text>
+<rect x="34" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="34" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="105" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">Device &amp; Premium</text>
+<text x="105" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">Hardware + subscription</text>
+<rect x="184" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="184" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="255" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">E-Commerce Pipeline</text>
+<text x="255" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">Cart &amp; simulated checkout</text>
+<rect x="354" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="354" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="425" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">Knit &amp; Sport Bands</text>
+<text x="425" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">AeroKnit &amp; Velocity</text>
+<rect x="504" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="504" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="575" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">Trail, Mesh &amp; Leather</text>
+<text x="575" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">Summit, Halo &amp; Heritage</text>
+<rect x="674" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="674" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="745" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">Biometric Science</text>
+<text x="745" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">HRV, Sleep &amp; Strain</text>
+<rect x="824" y="290" width="142" height="60" rx="6" ry="6" fill="#FFFFFF" stroke="#0B0B0B" stroke-width="1.5"/>
+<rect x="824" y="290" width="142" height="5" rx="2" ry="2" fill="#C7FA53"/>
+<text x="895" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="11px" font-weight="bold" fill="#0B0B0B">Content &amp; Support</text>
+<text x="895" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="9px" font-weight="bold" fill="#555555">Blog hub &amp; Help FAQ</text>
+<rect x="34" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="34" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="34" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="105" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">PRODUCT CATALOG</text>
+<circle cx="46" cy="428" r="2" fill="#0B0B0B"/>
+<text x="54" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">D'Vync Device (1.49M)</text>
+<circle cx="46" cy="449" r="2" fill="#0B0B0B"/>
+<text x="54" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">D'Vync Premium (499K/yr)</text>
+<circle cx="46" cy="470" r="2" fill="#0B0B0B"/>
+<text x="54" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Free tier, included</text>
+<circle cx="46" cy="491" r="2" fill="#0B0B0B"/>
+<text x="54" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Dynamic specs preview</text>
+<rect x="184" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="184" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="184" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="255" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">CHECKOUT PIPELINE</text>
+<circle cx="196" cy="428" r="2" fill="#0B0B0B"/>
+<text x="204" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">cart.html (localStorage)</text>
+<circle cx="196" cy="449" r="2" fill="#0B0B0B"/>
+<text x="204" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Simulated card checkout</text>
+<circle cx="196" cy="470" r="2" fill="#0B0B0B"/>
+<text x="204" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Instant thank-you.html</text>
+<circle cx="196" cy="491" r="2" fill="#0B0B0B"/>
+<text x="204" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Order saved to localStorage</text>
+<rect x="354" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="354" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="354" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="425" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">KNIT &amp; SPORT BANDS</text>
+<circle cx="366" cy="428" r="2" fill="#0B0B0B"/>
+<text x="374" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">AeroKnit Band</text>
+<circle cx="366" cy="449" r="2" fill="#0B0B0B"/>
+<text x="374" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">AeroKnit Reflective Band</text>
+<circle cx="366" cy="470" r="2" fill="#0B0B0B"/>
+<text x="374" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Velocity Band</text>
+<circle cx="366" cy="491" r="2" fill="#0B0B0B"/>
+<text x="374" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Quick-release clasp</text>
+<rect x="504" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="504" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="504" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="575" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">TRAIL, MESH &amp; LEATHER</text>
+<circle cx="516" cy="428" r="2" fill="#0B0B0B"/>
+<text x="524" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Summit Band</text>
+<circle cx="516" cy="449" r="2" fill="#0B0B0B"/>
+<text x="524" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Halo Mesh Band</text>
+<circle cx="516" cy="470" r="2" fill="#0B0B0B"/>
+<text x="524" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Heritage Leather Band</text>
+<circle cx="516" cy="491" r="2" fill="#0B0B0B"/>
+<text x="524" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Quick-release clasp</text>
+<rect x="674" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="674" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="674" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="745" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">ANALYTICS &amp; TECH</text>
+<circle cx="686" cy="428" r="2" fill="#0B0B0B"/>
+<text x="694" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">24/7 Autonomic HRV</text>
+<circle cx="686" cy="449" r="2" fill="#0B0B0B"/>
+<text x="694" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Circadian Sleep Cycles</text>
+<circle cx="686" cy="470" r="2" fill="#0B0B0B"/>
+<text x="694" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Daily Strain Scoring</text>
+<circle cx="686" cy="491" r="2" fill="#0B0B0B"/>
+<text x="694" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Screenless Philosophy</text>
+<rect x="824" y="385" width="142" height="126" rx="6" ry="6" fill="#FFFFFF" stroke="#A5A9AC" stroke-width="1.2"/>
+<rect x="824" y="385" width="142" height="24" rx="5" ry="5" fill="#0B0B0B"/>
+<rect x="824" y="403" width="142" height="6" fill="#0B0B0B"/>
+<text x="895" y="401" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5px" font-weight="bold" fill="#C7FA53" letter-spacing="0.4px">RESOURCE &amp; LEGAL</text>
+<circle cx="836" cy="428" r="2" fill="#0B0B0B"/>
+<text x="844" y="431.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Academic Blog Hub</text>
+<circle cx="836" cy="449" r="2" fill="#0B0B0B"/>
+<text x="844" y="452.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Device Setup &amp; FAQ</text>
+<circle cx="836" cy="470" r="2" fill="#0B0B0B"/>
+<text x="844" y="473.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Free Tier, Included</text>
+<circle cx="836" cy="491" r="2" fill="#0B0B0B"/>
+<text x="844" y="494.5" font-family="Arial, sans-serif" font-size="8.8px" font-weight="bold" fill="#292B2D">Decree 13 Data Privacy</text>
+</svg>

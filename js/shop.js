@@ -45,11 +45,11 @@
     return c && c.parent ? c.parent : cat;
   }
   function inView(p) {
-    return window.DV_inCategory(p, state.cat) &&
+    return !p.hideFromListings && window.DV_inCategory(p, state.cat) &&
       (!state.family || window.DV_bandGroup(state.family).families.indexOf(p.family) > -1);
   }
   function countIn(cat) {
-    return window.DV_PRODUCTS.filter(function (p) { return window.DV_inCategory(p, cat); }).length;
+    return window.DV_PRODUCTS.filter(function (p) { return !p.hideFromListings && window.DV_inCategory(p, cat); }).length;
   }
   function chip(attrs, label, count, pressed) {
     return '<button class="chip" ' + attrs + ' aria-pressed="' + pressed + '">' + esc(label) + '<small>' + count + '</small></button>';

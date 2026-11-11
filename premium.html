@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>D'Vync Premium | AI Analysis, Recovery &amp; Trend Reports</title>
-  <meta name="description" content="D&#x27;Vync Premium: AI-driven analysis, sleep and recovery recommendations, and long-term trend reports, for 499,000 VND a year. Requires a D&#x27;Vync device.">
+  <meta name="description" content="D&#x27;Vync Premium: AI-driven analysis, sleep and recovery recommendations, and long-term trend reports, for 59,000 VND a month or 499,000 VND a year. Requires a D&#x27;Vync device.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230B0B0B'/%3E%3Cpath d='M68.6 18.6A36 36 0 1 1 31.4 18.6' fill='none' stroke='%23F5F5F0' stroke-width='9' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23C7FA53'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +53,11 @@
           <div class="m-buy-top"><svg width="14" height="14" viewBox="0 0 100 100" aria-hidden="true"><path d="M73.3 12.7A44 44 0 1 1 26.7 12.7" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="50" r="12" fill="#c7fa53"/></svg>Requires a D'Vync device</div>
           <div class="m-buy-body">
             <h3 class="spaced">Premium</h3>
-            <p class="m-buy-sub">AI analysis, recovery recommendations and trend reports: <strong>499,000 VND/yr</strong>.</p>
+            <div class="m-billing-toggle" role="radiogroup" aria-label="Billing cycle">
+              <button type="button" class="is-active" data-billing="month" aria-pressed="true">Monthly</button>
+              <button type="button" data-billing="year" aria-pressed="false">Yearly</button>
+            </div>
+            <p class="m-buy-sub" data-billing-price>AI analysis, recovery recommendations and trend reports: <strong>59,000 VND/mo</strong>.</p>
             <ul class="m-checks">
               <li>Everything in Free</li>
               <li>AI-driven deep analysis</li>
@@ -61,7 +65,7 @@
               <li>Weekly and monthly trend reports</li>
               <li>Cancel any time, keep using Free</li>
             </ul>
-            <button class="btn btn-white btn-block" data-join="premium">Start Premium</button>
+            <button class="btn btn-white btn-block" data-join="premium-monthly">Start Premium</button>
             <span class="hsa hsa-plain"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>HSA/FSA eligible</span>
           </div>
         </div>
@@ -123,7 +127,7 @@
   </main>
 
   <!-- Floating join button (appears after the hero) -->
-  <button class="sticky-join btn btn-white" data-join="premium" aria-label="Start D'Vync Premium">Start Premium</button>
+  <button class="sticky-join btn btn-white" data-join="premium-monthly" aria-label="Start D'Vync Premium">Start Premium</button>
 
   <div data-include="footer"></div>
 

@@ -36,7 +36,7 @@
       navImage: M + 'Frame_2085654392-1__1_ (1).webp',
       compareImage: M + 'One__2_.webp',
       price: 1490000, stock: 180,
-      images: [M + 'plan-one.webp', M + 'Quantify_how_your_body_is_feeling__fr___1_.webp', M + 'dv-Strain__fr_.webp'],
+      images: [M + 'One__2_.webp', M + 'Quantify_how_your_body_is_feeling__fr___1_.webp', M + 'dv-Strain__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
       short: 'The screenless sensor and band. One purchase, wear it every day.',
       description: [
@@ -51,7 +51,7 @@
       navImage: M + 'Frame_2085654392__4_.webp',
       compareImage: M + 'Peak__3_.webp',
       price: 499000, billing: 'year', stock: 999,
-      images: [M + 'plan-peak.webp', M + 'dv-Extend_your_prime-fr.webp', M + 'Optimize_your_sleep__fr_.webp'],
+      images: [M + 'plan-year.webp', M + 'dv-Extend_your_prime-fr.webp', M + 'Optimize_your_sleep__fr_.webp'],
       video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
       short: 'AI analysis, recovery recommendations and long-term trend reports.',
       description: [
@@ -59,6 +59,24 @@
         'Requires a D\'Vync device. Cancel any time and keep using Free at no extra cost.'
       ],
       features: ['Everything in Free', 'AI-driven deep analysis', 'Sleep and recovery recommendations', 'Weekly and monthly trend reports', '499,000 VND a year'],
+      rating: 4.8, reviewCount: 2310, faq: membershipFaq, reviews: sampleReviews.membership
+    },
+    // Same plan as 'premium', billed monthly instead of yearly. Hidden from the shop grid and
+    // nav menu (see DV_PRODUCTS.filter(hideFromListings) in shop.js/layout.js) so Premium only
+    // shows once there; the premium.html billing toggle switches which of the two ids gets added.
+    {
+      id: 'premium-monthly', category: 'memberships', hideFromListings: true, name: 'D\'Vync Premium', badge: 'Most popular', tier: 'Premium', page: 'premium.html',
+      navImage: M + 'Frame_2085654392__4_.webp',
+      compareImage: M + 'Peak__3_.webp',
+      price: 59000, billing: 'month', stock: 999,
+      images: [M + 'plan-month.webp', M + 'dv-Extend_your_prime-fr.webp', M + 'Optimize_your_sleep__fr_.webp'],
+      video: M + 'DifferentbyDesign_4x3_01_Final__1___1___1_.mp4',
+      short: 'AI analysis, recovery recommendations and long-term trend reports.',
+      description: [
+        'Premium adds AI-driven analysis on top of your Free data: sleep and recovery recommendations, and weekly and monthly trend reports.',
+        'Requires a D\'Vync device. Cancel any time and keep using Free at no extra cost.'
+      ],
+      features: ['Everything in Free', 'AI-driven deep analysis', 'Sleep and recovery recommendations', 'Weekly and monthly trend reports', '59,000 VND a month'],
       rating: 4.8, reviewCount: 2310, faq: membershipFaq, reviews: sampleReviews.membership
     }
   ];
@@ -192,7 +210,7 @@
   window.DV_PLAN_COMPARE = {
     columns: [
       { id: 'free', title: 'Free', includes: 'D\'Vync sensor and band (sold separately)', cta: 'Start free', price: 'Free forever' },
-      { id: 'premium', includes: 'D\'Vync sensor and band (sold separately)', cta: 'Start with Premium' }
+      { id: 'premium', includes: 'D\'Vync sensor and band (sold separately)', cta: 'Start with Premium', price: '59,000 VND/mo or 499,000 VND/yr' }
     ],
     rows: [
       { icon: 'pulse', label: 'Heart rate', in: ['free', 'premium'] },

@@ -32,6 +32,27 @@
     if (b) join(b.dataset.join, b);
   });
 
+  // ----- Billing toggle (Premium only): switches which plan id "Start Premium" adds -----
+  var billingToggle = document.querySelector('.m-billing-toggle');
+  if (billingToggle) {
+    var priceEl = document.querySelector('[data-billing-price]');
+    var buyBtn = document.querySelector('.m-buy [data-join]');
+    var stickyBtn = document.querySelector('.sticky-join[data-join]');
+    var plans = { month: window.DV_findProduct('premium-monthly'), year: window.DV_findProduct('premium') };
+    billingToggle.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-billing]');
+      if (!b) return;
+      var cycle = b.dataset.billing, p = plans[cycle];
+      Array.prototype.forEach.call(billingToggle.children, function (c) {
+        c.classList.toggle('is-active', c === b);
+        c.setAttribute('aria-pressed', String(c === b));
+      });
+      if (priceEl) priceEl.innerHTML = 'AI analysis, recovery recommendations and trend reports: <strong>' + esc(window.Cart.money(p.price)) + '/' + (cycle === 'month' ? 'mo' : 'yr') + '</strong>.';
+      if (buyBtn) buyBtn.dataset.join = p.id;
+      if (stickyBtn) stickyBtn.dataset.join = p.id;
+    });
+  }
+
   // ----- Comparison table -----
   var icons = {
     card: '<path d="M3 7h18v10H3zM3 10h18"/>',
@@ -58,7 +79,8 @@
   if (compareEl && cmp) {
     // One grid, row by row, so cells line up across plans and the title row can be sticky
     var cols = cmp.columns.map(function (col) {
-      var p = window.DV_findProduct(col.id === 'free' ? 'device' : col.id);
+      // The premium column shows the monthly plan's product id (same features, lower sticker price)
+      var p = window.DV_findProduct(col.id === 'free' ? 'device' : col.id === 'premium' ? 'premium-monthly' : col.id);
       // A device.html visitor (no software tier chosen yet) sees the Free column highlighted,
       // since Free is what you get with just the device.
       var isCur = col.id === CURRENT || (CURRENT === 'device' && col.id === 'free');
@@ -78,7 +100,7 @@
     html += rowOf('cmp-cta', function (c) {
       if (c.col.id === 'free') return '<a class="btn btn-white" href="device.html">' + esc(c.col.cta) + '</a>';
       return c.col.id === CURRENT
-        ? '<button class="btn btn-white" data-join="' + c.col.id + '">' + esc(c.col.cta) + '</button>'
+        ? '<button class="btn btn-white" data-join="' + c.p.id + '">' + esc(c.col.cta) + '</button>'
         : '<a class="btn btn-white" href="' + (c.p.page || 'product.html?id=' + c.p.id) + '">' + esc(c.col.cta) + '</a>';
     });
     cmp.rows.forEach(function (row, ri) {
